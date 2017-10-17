@@ -39,9 +39,9 @@ get_batch_options() {
 
 get_batch_options "$@"
 
-StudyFolder="${HOME}/projects/Pipelines_ExampleData" #Location of Subject folders (named by subjectID)
+StudyFolder="${HOME}/Desktop/HCP_Examples" #Location of Subject folders (named by subjectID)
 Subjlist="100307" #Space delimited list of subject IDs
-EnvironmentScript="${HOME}/projects/Pipelines/Examples/Scripts/SetUpHCPPipeline.sh" #Pipeline environment script
+EnvironmentScript="/Applications/Preprocessing/Pipelines-master/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" #Pipeline environment script
 
 if [ -n "${command_line_specified_study_folder}" ]; then
     StudyFolder="${command_line_specified_study_folder}"
@@ -90,8 +90,8 @@ for Subject in $Subjlist ; do
   SubcorticalGrayLabels="${HCPPIPEDIR_Config}/FreeSurferSubcorticalLabelTableLut.txt"
   FreeSurferLabels="${HCPPIPEDIR_Config}/FreeSurferAllLut.txt"
   ReferenceMyelinMaps="${HCPPIPEDIR_Templates}/standard_mesh_atlases/Conte69.MyelinMap_BC.164k_fs_LR.dscalar.nii"
-  # RegName="MSMSulc" #MSMSulc is recommended, if binary is not available use FS (FreeSurfer)
-  RegName="FS" 
+   RegName="MSMSulc" #MSMSulc is recommended, if binary is not available use FS (FreeSurfer)
+  # RegName="FS"
 
   if [ -n "${command_line_specified_run_local}" ] ; then
       echo "About to run ${HCPPIPEDIR}/PostFreeSurfer/PostFreeSurferPipeline.sh"

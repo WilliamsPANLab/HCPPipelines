@@ -126,11 +126,11 @@ main()
 	get_batch_options "$@"
 
 	# Set variable values that locate and specify data to process
-	StudyFolder="${HOME}/projects/Pipelines_ExampleData" # Location of Subject folders (named by subjectID)
+	StudyFolder="${HOME}/Desktop/HCP_examples" # Location of Subject folders (named by subjectID)
 	Subjlist="100307"                                    # Space delimited list of subject IDs
 
 	# Set variable value that set up environment
-	EnvironmentScript="${HOME}/projects/Pipelines/Examples/Scripts/SetUpHCPPipeline.sh" # Pipeline environment script
+	EnvironmentScript="/Applications/Preprocessing/Pipelines-master/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
 
 	# Use any command line specified options to override any of the variable settings above
 	if [ -n "${command_line_specified_study_folder}" ]; then
@@ -406,8 +406,8 @@ main()
 		# set all these values to NONE if not doing readout distortion correction
 		# 
 		# Sample values for when using General Electric structurals
-		#   T1wSampleSpacing="0.000011999" # For General Electric scanners, 1/((0018,0095)*(0028,0010))
-		#   T2wSampleSpacing="0.000008000" # For General Electric scanners, 1/((0018,0095)*(0028,0010))
+		   T1wSampleSpacing="0.000011999" # For General Electric scanners, 1/((0018,0095)*(0028,0010))
+		   T2wSampleSpacing="0.000008000" # For General Electric scanners, 1/((0018,0095)*(0028,0010))
 		#   UnwarpDir="y"  ## MPH: This doesn't seem right. Is this accurate??
 
 		# The values set below are for the HCP-YA Protocol using the Siemens 
