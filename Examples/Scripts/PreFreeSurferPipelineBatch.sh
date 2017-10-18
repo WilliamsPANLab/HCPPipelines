@@ -126,11 +126,11 @@ main()
 	get_batch_options "$@"
 
 	# Set variable values that locate and specify data to process
-	StudyFolder="${HOME}/Desktop/HCP_examples" # Location of Subject folders (named by subjectID)
-	Subjlist="100307"                                    # Space delimited list of subject IDs
+	StudyFolder="/share/leanew1/PANLab_datasets/HCP_Pilots/2016" # Location of Subject folders (named by subjectID)
+	Subjlist="SUB_1"                                    # Space delimited list of subject IDs
 
 	# Set variable value that set up environment
-	EnvironmentScript="/Applications/Preprocessing/Pipelines-master/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
+	EnvironmentScript="/share/leanew1/PANLab/Pipelines-master/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
 
 	# Use any command line specified options to override any of the variable settings above
 	if [ -n "${command_line_specified_study_folder}" ]; then
@@ -172,14 +172,14 @@ main()
 	# input names or paths. This batch script assumes the HCP raw data naming 
 	# convention, e.g.
 	#
-	# ${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_T1w_MPR1.nii.gz
-	# ${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR2/${Subject}_3T_T1w_MPR2.nii.gz
+	# ${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_T1w_8mm_sag1.nii.gz
+	# ${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_T1w_8mm_sag2.nii.gz
 	#
-	# ${StudyFolder}/${Subject}/unprocessed/3T/T2w_SPC1/${Subject}_3T_T2w_SPC1.nii.gz
-	# ${StudyFolder}/${Subject}/unprocessed/3T/T2w_SPC2/${Subject}_3T_T2w_SPC2.nii.gz
+	# ${StudyFolder}/${Subject}/unprocessed/T2w/${Subject}_3T_T2w_SPC1.nii.gz
+	# ${StudyFolder}/${Subject}/unprocessed/T2w/${Subject}_3T_T2w_SPC2.nii.gz
 	#
-	# ${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_FieldMap_Magnitude.nii.gz
-	# ${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_FieldMap_Phase.nii.gz
+	# ${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_FieldMap_Magnitude.nii.gz
+	# ${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_FieldMap_Phase.nii.gz
 
 	# Scan settings:
 	#
@@ -219,12 +219,12 @@ main()
 
 		# Detect Number of T1w Images and build list of full paths to 
 		# T1w images
-		numT1ws=`ls ${StudyFolder}/${Subject}/unprocessed/3T | grep 'T1w_MPR.$' | wc -l`
+		numT1ws=`ls ${StudyFolder}/${Subject}/unprocessed | grep 'T1w_8mm_sag.$' | wc -l`
 		echo "Found ${numT1ws} T1w Images for subject ${Subject}"
 		T1wInputImages=""
 		i=1
 		while [ $i -le $numT1ws ] ; do
-			T1wInputImages=`echo "${T1wInputImages}${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR${i}/${Subject}_3T_T1w_MPR${i}.nii.gz@"`
+			T1wInputImages=`echo "${T1wInputImages}${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_T1w_8mm_sag${i}.nii.gz@"`
 			i=$(($i+1))
 		done
 
@@ -235,7 +235,7 @@ main()
 		T2wInputImages=""
 		i=1
 		while [ $i -le $numT2ws ] ; do
-			T2wInputImages=`echo "${T2wInputImages}${StudyFolder}/${Subject}/unprocessed/3T/T2w_SPC${i}/${Subject}_3T_T2w_SPC${i}.nii.gz@"`
+			T2wInputImages=`echo "${T2wInputImages}${StudyFolder}/${Subject}/unprocessed/T2w/${Subject}_T2w_CUBE_8mm_sag${i}.nii.gz@"`
 			i=$(($i+1))
 		done
 
@@ -286,7 +286,7 @@ main()
 
 		# The MagnitudeInputName variable should be set to a 4D magitude volume
 		# with two 3D timepoints or "NONE" if not used
-		MagnitudeInputName="${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_FieldMap_Magnitude.nii.gz" 
+		MagnitudeInputName="${StudyFolder}/${Subject}/unprocessed/3T/T1w/${Subject}_3T_FieldMap_Magnitude.nii.gz" 
 
 		# The PhaseInputName variable should be set to a 3D phase difference 
 		# volume or "NONE" if not used
@@ -311,8 +311,8 @@ main()
 		# (i.e. if AvgrdcSTRING is not equal to "TOPUP")
 		#
 		# Example values for when using Spin Echo Field Maps from a Siemens machine:
-		#   ${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_SpinEchoFieldMap_LR.nii.gz
-		#   ${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_SpinEchoFieldMap_AP.nii.gz
+		#   ${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_SpinEchoFieldMap_LR.nii.gz
+		#   ${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_SpinEchoFieldMap_AP.nii.gz
 		SpinEchoPhaseEncodeNegative="NONE" 
 
 		# The SpinEchoPhaseEncodePositive variable should be set to the 
@@ -322,8 +322,8 @@ main()
 		# (i.e. if AvgrdcSTRING is not equal to "TOPUP")
 		# 
 		# Example values for when using Spin Echo Field Maps from a Siemens machine:
-		#   ${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_SpinEchoFieldMap_RL.nii.gz
-		#   ${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_SpinEchoFieldMap_PA.nii.gz
+		#   ${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_SpinEchoFieldMap_RL.nii.gz
+		#   ${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_SpinEchoFieldMap_PA.nii.gz
 		SpinEchoPhaseEncodePositive="NONE"
 
 		# Echo Spacing or Dwelltime of spin echo EPI MRI image. Specified in seconds.
@@ -368,7 +368,7 @@ main()
 		#   2) magnitude, 
 		# set to NONE if using TOPUP or FIELDMAP/SiemensFieldMap
 		#
-		#   GEB0InputName="${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_GradientEchoFieldMap.nii.gz" 
+		#   GEB0InputName="${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_GradientEchoFieldMap.nii.gz" 
 		GEB0InputName="NONE"
 		
 		# Templates
