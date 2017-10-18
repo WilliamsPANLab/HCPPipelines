@@ -219,7 +219,7 @@ main()
 
 		# Detect Number of T1w Images and build list of full paths to 
 		# T1w images
-		numT1ws=`ls ${StudyFolder}/${Subject}/unprocessed | grep 'T1w_8mm_sag.$' | wc -l`
+		numT1ws=`ls ${StudyFolder}/${Subject}/unprocessed | grep 'T1w$' | wc -l`
 		echo "Found ${numT1ws} T1w Images for subject ${Subject}"
 		T1wInputImages=""
 		i=1
@@ -230,7 +230,7 @@ main()
 
 		# Detect Number of T2w Images and build list of full paths to
 		# T2w images
-		numT2ws=`ls ${StudyFolder}/${Subject}/unprocessed/3T | grep 'T2w_SPC.$' | wc -l`
+		numT2ws=`ls ${StudyFolder}/${Subject}/unprocessed | grep 'T2w$' | wc -l`
 		echo "Found ${numT2ws} T2w Images for subject ${Subject}"
 		T2wInputImages=""
 		i=1
@@ -278,7 +278,7 @@ main()
 		#
 		#   Note: The AvgrdcSTRING variable could also be set to the value 
 		#   "FIELDMAP" which is equivalent to "SiemensFieldMap".
-		AvgrdcSTRING="SiemensFieldMap"
+		AvgrdcSTRING="GeneralElectricFieldMap"
 
 		# ----------------------------------------------------------------------
 		# Variables related to using Siemens specific Gradient Echo Field Maps
@@ -286,11 +286,11 @@ main()
 
 		# The MagnitudeInputName variable should be set to a 4D magitude volume
 		# with two 3D timepoints or "NONE" if not used
-		MagnitudeInputName="${StudyFolder}/${Subject}/unprocessed/3T/T1w/${Subject}_3T_FieldMap_Magnitude.nii.gz" 
+		MagnitudeInputName="NONE" 
 
 		# The PhaseInputName variable should be set to a 3D phase difference 
 		# volume or "NONE" if not used
-		PhaseInputName="${StudyFolder}/${Subject}/unprocessed/3T/T1w_MPR1/${Subject}_3T_FieldMap_Phase.nii.gz" 
+		PhaseInputName="NONE" 
 
 		# The TE variable should be set to 2.46ms for 3T scanner, 1.02ms for 7T
 		# scanner or "NONE" if not using
@@ -368,8 +368,8 @@ main()
 		#   2) magnitude, 
 		# set to NONE if using TOPUP or FIELDMAP/SiemensFieldMap
 		#
-		#   GEB0InputName="${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_GradientEchoFieldMap.nii.gz" 
-		GEB0InputName="NONE"
+		   GEB0InputName="${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_GradientEchoFieldMap.nii.gz" 
+		
 		
 		# Templates
 
