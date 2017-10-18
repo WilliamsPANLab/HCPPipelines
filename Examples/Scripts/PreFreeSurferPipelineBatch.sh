@@ -278,7 +278,7 @@ main()
 		#
 		#   Note: The AvgrdcSTRING variable could also be set to the value 
 		#   "FIELDMAP" which is equivalent to "SiemensFieldMap".
-		AvgrdcSTRING="GeneralElectricFieldMap"
+		AvgrdcSTRING="NONE"
 
 		# ----------------------------------------------------------------------
 		# Variables related to using Siemens specific Gradient Echo Field Maps
@@ -368,7 +368,7 @@ main()
 		#   2) magnitude, 
 		# set to NONE if using TOPUP or FIELDMAP/SiemensFieldMap
 		#
-		   GEB0InputName="${StudyFolder}/${Subject}/unprocessed/T1w/${Subject}_3T_GradientEchoFieldMap.nii.gz" 
+		   GEB0InputName="NONE" 
 		
 		
 		# Templates
