@@ -4,7 +4,7 @@ echo "This script must be SOURCED to correctly setup the environment prior to ru
 
 # Set up FSL (if not already done so in the running environment)
 # Uncomment the following 2 lines (remove the leading #) and correct the FSLDIR setting for your setup
- export FSLDIR=/Applications/Preprocessing/fsl
+ export FSLDIR=/usr/share/fsl/5.0
  . ${FSLDIR}/etc/fslconf/fsl.sh
 
 # Let FreeSurfer know what version of FSL to use
@@ -13,12 +13,12 @@ export FSL_DIR="${FSLDIR}"
 
 # Set up FreeSurfer (if not already done so in the running environment)
 # Uncomment the following 2 lines (remove the leading #) and correct the FREESURFER_HOME setting for your setup
- export FREESURFER_HOME=/Applications/Preprocessing/freesurfer
+ export FREESURFER_HOME=/share/leanew1/PANLab/HCP-Pipelines/freesurfer
  source ${FREESURFER_HOME}/SetUpFreeSurfer.sh > /dev/null 2>&1
 
 # Set up specific environment variables for the HCP Pipeline
-export HCPPIPEDIR=/Applications/Preprocessing/Pipelines-master
-export CARET7DIR=/Applications/Preprocessing/workbench/bin_macosx64
+export HCPPIPEDIR=/share/leanew1/PANLab/HCP-Pipelines/Pipelines-master
+export CARET7DIR=/share/leanew1/PANLab/HCP-Pipelines/workbench/bin_linux64
 export MSMBINDIR=/Applications/Preprocessing/MSM_HOCR_v2/MacOSX
 export MSMCONFIGDIR=${HCPPIPEDIR}/MSMConfig
 export MATLAB_COMPILER_RUNTIME=/media/myelin/brainmappers/HardDrives/1TB/MATLAB_Runtime/v901
