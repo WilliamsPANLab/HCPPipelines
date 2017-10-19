@@ -126,11 +126,11 @@ main()
 	get_batch_options "$@"
 
 	# Set variable values that locate and specify data to process
-	StudyFolder="/share/leanew1/PANLab_datasets/HCP_Pilots/2016" # Location of Subject folders (named by subjectID)
-	Subjlist="SUB_1"                                    # Space delimited list of subject IDs
+	StudyFolder="/share/leanew1/PANLab_Datasets/HCP_Pilots/2016" # Location of Subject folders (named by subjectID)
+	Subjlist="Subject_1"                                    # Space delimited list of subject IDs
 
 	# Set variable value that set up environment
-	EnvironmentScript="/share/leanew1/PANLab/Pipelines-master/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
+	EnvironmentScript="/share/leanew1/PANLab/HCP-Pipelines/Pipelines-master/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
 
 	# Use any command line specified options to override any of the variable settings above
 	if [ -n "${command_line_specified_study_folder}" ]; then
