@@ -1,0 +1,50 @@
+Fri Sep 22 10:28:25 PDT 2017 - FreeSurferPipeline.sh - Parsing Command Line Options
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - Finished Parsing Command Line Options
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - SubjectID: 100307
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - SubjectDIR: /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - T1wImage: /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T1w_acpc_dc_restore.nii.gz
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - T1wImageBrain: /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T1w_acpc_dc_restore_brain.nii.gz
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - T2wImage: /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T2w_acpc_dc_restore.nii.gz
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - recon_all_seed: 
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - seed_cmd_appendix: 
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - HCPPIPEDIR: /Applications/Preprocessing/Pipelines-master
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - HCPPIPEDIR_FS: /Applications/Preprocessing/Pipelines-master/FreeSurfer/scripts
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - which flirt: /Applications/Preprocessing/fsl/bin/flirt
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - flirt -version: FLIRT version 6.0
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - which applywarp: /Applications/Preprocessing/fsl/bin/applywarp
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - which fslstats: /Applications/Preprocessing/fsl/bin/fslstats
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - which fslmaths: /Applications/Preprocessing/fsl/bin/fslmaths
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - which recon-all: /Applications/Preprocessing/freesurfer/bin/recon-all
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - recon-all --version: $Id: recon-all,v 1.379.2.73 2013/05/12 23:15:37 nicks Exp $
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - which mri_convert: /Applications/Preprocessing/freesurfer/bin/mri_convert
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - which mri_em_register: /Applications/Preprocessing/freesurfer/bin/mri_em_register
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - mri_em_register --version: stable5
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - which mri_watershed: /Applications/Preprocessing/freesurfer/bin/mri_watershed
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - mri_watershed --version: stable5
+Fri Sep 22 10:28:26 PDT 2017 - FreeSurferPipeline.sh - Make Spline Interpolated Downsample to 1mm
+Fri Sep 22 10:28:45 PDT 2017 - FreeSurferPipeline.sh - Initial Recon-all Steps
+Subject Stamp: freesurfer-Darwin-lion-stable-pub-v5.3.0-HCP
+Current Stamp: freesurfer-Darwin-lion-stable-pub-v5.3.0-HCP
+INFO: SUBJECTS_DIR is /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w
+Actual FREESURFER_HOME /Applications/Preprocessing/freesurfer
+Darwin DN52eino.SUNet 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64 x86_64
+/Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/100307
+\n mri_convert /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T1w_acpc_dc_restore_1mm.nii.gz /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/100307/mri/orig/001.mgz \n
+mri_convert /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T1w_acpc_dc_restore_1mm.nii.gz /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/100307/mri/orig/001.mgz 
+--------------------------------------------------------------------------
+ERROR: FreeSurfer license file /Applications/Preprocessing/freesurfer/license.txt not found.
+  If you are outside the NMR-Martinos Center,
+  go to http://surfer.nmr.mgh.harvard.edu to 
+  get a valid license file (it's free).
+  If you are inside the NMR-Martinos Center,
+  make sure to source the standard environment.
+--------------------------------------------------------------------------
+$Id: mri_convert.c,v 1.179.2.7 2012/09/05 21:55:16 mreuter Exp $
+reading from /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T1w_acpc_dc_restore_1mm.nii.gz...
+Darwin DN52eino.SUNet 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64 x86_64
+
+recon-all -s 100307 exited with ERRORS at Fri Sep 22 10:28:54 PDT 2017
+
+For more details, see the log file /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/100307/scripts/recon-all.log
+To report a problem, see http://surfer.nmr.mgh.harvard.edu/fswiki/BugReporting
+

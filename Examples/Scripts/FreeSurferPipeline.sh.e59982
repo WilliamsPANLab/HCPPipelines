@@ -1,0 +1,567 @@
+(standard_in) 2: comparison in expression
+Reading 2 control points...
+only using 2 control points from file, mean 1386.7, scaling by 0.08...
+only generating white matter surface
+reading original vertex positions from white.hires
+using filled.hires as filled name
+using wm.hires as filled name
+appending .deformed to output names...
+write iterations = 0
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.masked.norm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+580062 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.white.hires...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (99.0): 99.4 +- 7.3 [70.0 --> 110.0]
+GM (90.0) : 88.0 +- 11.2 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 63.8 (was 70)
+setting MAX_BORDER_WHITE to 116.3 (was 105)
+setting MIN_BORDER_WHITE to 75.0 (was 85)
+setting MAX_CSF to 52.6 (was 40)
+setting MAX_GRAY to 101.7 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 69.4 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 41.4 (was 40)
+repositioning cortical surface to gray/white boundary
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+smoothing T1 volume with sigma = 2.000
+vertex spacing 0.89 +- 0.26 (0.03-->5.13) (max @ vno 143758 --> 144652)
+face area 0.33 +- 0.16 (0.00-->5.63)
+mean absolute distance = 1.54 +- 1.53
+4397 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+vertex spacing 0.90 +- 0.28 (0.05-->5.35) (max @ vno 101624 --> 95715)
+face area 0.33 +- 0.17 (0.00-->5.80)
+mean absolute distance = 0.67 +- 0.78
+3163 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+vertex spacing 0.89 +- 0.27 (0.04-->5.30) (max @ vno 101624 --> 95715)
+face area 0.33 +- 0.17 (0.00-->5.99)
+mean absolute distance = 0.41 +- 0.58
+5703 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+vertex spacing 0.89 +- 0.26 (0.03-->5.30) (max @ vno 101624 --> 95715)
+face area 0.33 +- 0.17 (0.00-->5.88)
+mean absolute distance = 0.31 +- 0.48
+5606 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+writing white matter surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.white.deformed...
+writing smoothed curvature to lh.curv.deformed
+writing smoothed area to lh.area.deformed
+vertex spacing 0.89 +- 0.26 (0.03-->5.34) (max @ vno 95715 --> 101624)
+face area 0.33 +- 0.16 (0.00-->5.91)
+refinement took 4.2 minutes
+only generating white matter surface
+reading original vertex positions from white.hires
+using filled.hires as filled name
+using wm.hires as filled name
+appending .deformed to output names...
+write iterations = 0
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.masked.norm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+570117 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.white.hires...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (99.0): 99.2 +- 7.1 [70.0 --> 110.0]
+GM (91.0) : 88.3 +- 11.0 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 68.0 (was 70)
+setting MAX_BORDER_WHITE to 117.1 (was 105)
+setting MIN_BORDER_WHITE to 79.0 (was 85)
+setting MAX_CSF to 57.0 (was 40)
+setting MAX_GRAY to 102.9 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 73.5 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 46.0 (was 40)
+repositioning cortical surface to gray/white boundary
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+smoothing T1 volume with sigma = 2.000
+vertex spacing 0.88 +- 0.26 (0.01-->7.38) (max @ vno 70443 --> 70444)
+face area 0.32 +- 0.16 (0.00-->6.81)
+mean absolute distance = 1.53 +- 1.55
+4577 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+vertex spacing 0.89 +- 0.29 (0.03-->6.63) (max @ vno 65124 --> 65145)
+face area 0.32 +- 0.18 (0.00-->6.70)
+mean absolute distance = 0.67 +- 0.80
+3400 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+vertex spacing 0.88 +- 0.28 (0.04-->6.90) (max @ vno 65124 --> 65145)
+face area 0.33 +- 0.18 (0.00-->6.92)
+mean absolute distance = 0.41 +- 0.59
+4954 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+vertex spacing 0.88 +- 0.27 (0.04-->7.10) (max @ vno 65124 --> 65145)
+face area 0.32 +- 0.17 (0.00-->6.80)
+mean absolute distance = 0.31 +- 0.48
+5618 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+writing white matter surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.white.deformed...
+writing smoothed curvature to rh.curv.deformed
+writing smoothed area to rh.area.deformed
+vertex spacing 0.89 +- 0.27 (0.01-->7.17) (max @ vno 65124 --> 65145)
+face area 0.33 +- 0.17 (0.00-->6.77)
+refinement took 4.0 minutes
+-white NOWRITE indicates that white, curv, area, and cortex.label files will not be written...
+reading original vertex positions from white.deformed
+using filled.hires as filled name
+using wm.hires as filled name
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.norm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+304819 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.white.deformed...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (95.0): 95.2 +- 8.0 [70.0 --> 110.0]
+GM (85.0) : 83.7 +- 11.3 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 60.7 (was 70)
+setting MAX_BORDER_WHITE to 111.0 (was 105)
+setting MIN_BORDER_WHITE to 72.0 (was 85)
+setting MAX_CSF to 8.0 (was 40)
+setting MAX_GRAY to 95.0 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 66.4 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 8.0 (was 40)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/terrier_001/users/nicks/freesurfer/average/colortable_desikan_killiany.txt)
+repositioning cortical surface to gray/white boundary
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+smoothing T1 volume with sigma = 2.000
+vertex spacing 0.83 +- 0.24 (0.02-->4.73) (max @ vno 143758 --> 144652)
+face area 0.29 +- 0.14 (0.00-->3.53)
+mean absolute distance = 1.68 +- 1.56
+4559 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+vertex spacing 0.89 +- 0.28 (0.05-->4.93) (max @ vno 143758 --> 144652)
+face area 0.29 +- 0.15 (0.00-->3.86)
+mean absolute distance = 0.72 +- 0.79
+2835 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+vertex spacing 0.88 +- 0.26 (0.05-->4.98) (max @ vno 91754 --> 171450)
+face area 0.33 +- 0.17 (0.00-->5.01)
+mean absolute distance = 0.49 +- 0.64
+4594 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+vertex spacing 0.87 +- 0.26 (0.04-->5.23) (max @ vno 91754 --> 171450)
+face area 0.32 +- 0.16 (0.00-->5.07)
+mean absolute distance = 0.39 +- 0.56
+5423 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+writing pial surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.pial...
+writing smoothed curvature to lh.curv.pial
+writing smoothed area to lh.area.pial
+vertex spacing 1.01 +- 0.44 (0.03-->6.32) (max @ vno 91754 --> 171450)
+face area 0.40 +- 0.32 (0.00-->7.31)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+positioning took 9.6 minutes
+-white NOWRITE indicates that white, curv, area, and cortex.label files will not be written...
+reading original vertex positions from white.deformed
+using filled.hires as filled name
+using wm.hires as filled name
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.norm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+333436 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.white.deformed...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (94.0): 94.8 +- 7.9 [70.0 --> 110.0]
+GM (85.0) : 84.0 +- 10.7 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 64.3 (was 70)
+setting MAX_BORDER_WHITE to 117.9 (was 105)
+setting MIN_BORDER_WHITE to 75.0 (was 85)
+setting MAX_CSF to 8.0 (was 40)
+setting MAX_GRAY to 102.1 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 69.7 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 8.0 (was 40)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/terrier_001/users/nicks/freesurfer/average/colortable_desikan_killiany.txt)
+repositioning cortical surface to gray/white boundary
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+smoothing T1 volume with sigma = 2.000
+vertex spacing 0.82 +- 0.24 (0.01-->5.82) (max @ vno 170326 --> 170327)
+face area 0.28 +- 0.14 (0.00-->4.64)
+mean absolute distance = 1.65 +- 1.59
+4600 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+vertex spacing 0.88 +- 0.29 (0.06-->6.40) (max @ vno 170326 --> 170327)
+face area 0.28 +- 0.16 (0.00-->4.37)
+mean absolute distance = 0.72 +- 0.83
+2915 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+vertex spacing 0.87 +- 0.27 (0.03-->6.33) (max @ vno 170326 --> 170327)
+face area 0.32 +- 0.17 (0.00-->5.16)
+mean absolute distance = 0.48 +- 0.64
+4595 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+vertex spacing 0.87 +- 0.26 (0.06-->6.19) (max @ vno 170326 --> 170327)
+face area 0.32 +- 0.17 (0.00-->4.96)
+mean absolute distance = 0.38 +- 0.55
+5135 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+writing pial surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.pial...
+writing smoothed curvature to rh.curv.pial
+writing smoothed area to rh.area.pial
+vertex spacing 1.01 +- 0.45 (0.01-->10.53) (max @ vno 171219 --> 171227)
+face area 0.40 +- 0.32 (0.00-->9.71)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+positioning took 9.4 minutes
+using T2 threshold of 2.00 sigmas above the mean (default=2)
+using T2 threshold of 3.00 sigmas below the mean (default=2)
+using filled.hires as filled name
+using wm.hires as filled name
+reading original vertex positions from white.deformed
+reading previously compute gray/white surface
+refining pial surfaces placement using T2 volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T2w_hires.norm
+appending .postT2.pass1 to output names...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.norm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+304819 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.white.deformed...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (95.0): 95.2 +- 8.0 [70.0 --> 110.0]
+GM (85.0) : 83.7 +- 11.3 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 60.7 (was 70)
+setting MAX_BORDER_WHITE to 111.0 (was 105)
+setting MIN_BORDER_WHITE to 72.0 (was 85)
+setting MAX_CSF to 49.5 (was 40)
+setting MAX_GRAY to 95.0 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 66.4 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 38.2 (was 40)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/terrier_001/users/nicks/freesurfer/average/colortable_desikan_killiany.txt)
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+writing pial surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.pial.postT2.pass1...
+writing smoothed curvature to lh.curv.pial.postT2.pass1
+writing smoothed area to lh.area.pial.postT2.pass1
+vertex spacing 1.00 +- 0.44 (0.08-->6.49) (max @ vno 109075 --> 107846)
+face area 0.40 +- 0.31 (0.00-->8.15)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+positioning took 11.5 minutes
+using T2 threshold of 2.00 sigmas above the mean (default=2)
+using T2 threshold of 3.00 sigmas below the mean (default=2)
+using filled.hires as filled name
+using wm.hires as filled name
+reading original vertex positions from white.deformed
+reading previously compute gray/white surface
+refining pial surfaces placement using T2 volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T2w_hires.norm
+appending .postT2.pass1 to output names...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.norm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+333436 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.white.deformed...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (94.0): 94.8 +- 7.9 [70.0 --> 110.0]
+GM (85.0) : 84.0 +- 10.7 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 64.3 (was 70)
+setting MAX_BORDER_WHITE to 117.9 (was 105)
+setting MIN_BORDER_WHITE to 75.0 (was 85)
+setting MAX_CSF to 53.7 (was 40)
+setting MAX_GRAY to 102.1 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 69.7 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 43.0 (was 40)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/terrier_001/users/nicks/freesurfer/average/colortable_desikan_killiany.txt)
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+writing pial surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.pial.postT2.pass1...
+writing smoothed curvature to rh.curv.pial.postT2.pass1
+writing smoothed area to rh.area.pial.postT2.pass1
+vertex spacing 1.01 +- 0.45 (0.07-->6.70) (max @ vno 70443 --> 70444)
+face area 0.40 +- 0.32 (0.00-->9.18)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+positioning took 11.7 minutes
+-white NOWRITE indicates that white, curv, area, and cortex.label files will not be written...
+reading original vertex positions from white.deformed
+using filled.hires as filled name
+using wm.hires as filled name
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.greynorm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+300116 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.white.deformed...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (94.0): 94.7 +- 8.2 [70.0 --> 110.0]
+GM (85.0) : 83.7 +- 10.7 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 63.3 (was 70)
+setting MAX_BORDER_WHITE to 111.2 (was 105)
+setting MIN_BORDER_WHITE to 74.0 (was 85)
+setting MAX_CSF to 41.8 (was 40)
+setting MAX_GRAY to 94.8 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 68.6 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 31.0 (was 40)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/terrier_001/users/nicks/freesurfer/average/colortable_desikan_killiany.txt)
+repositioning cortical surface to gray/white boundary
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+smoothing T1 volume with sigma = 2.000
+vertex spacing 0.83 +- 0.24 (0.02-->4.73) (max @ vno 143758 --> 144652)
+face area 0.29 +- 0.14 (0.00-->3.53)
+mean absolute distance = 1.68 +- 1.55
+4487 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+vertex spacing 0.89 +- 0.28 (0.04-->4.94) (max @ vno 143758 --> 144652)
+face area 0.29 +- 0.15 (0.00-->3.84)
+mean absolute distance = 0.72 +- 0.80
+2813 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+vertex spacing 0.88 +- 0.27 (0.03-->4.91) (max @ vno 91754 --> 171450)
+face area 0.33 +- 0.17 (0.00-->4.96)
+mean absolute distance = 0.50 +- 0.64
+4261 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+vertex spacing 0.88 +- 0.26 (0.04-->4.95) (max @ vno 171367 --> 80150)
+face area 0.32 +- 0.16 (0.00-->5.06)
+mean absolute distance = 0.40 +- 0.55
+5281 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+writing pial surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.pial...
+writing smoothed curvature to lh.curv.pial
+writing smoothed area to lh.area.pial
+vertex spacing 1.01 +- 0.43 (0.06-->6.02) (max @ vno 110059 --> 110042)
+face area 0.41 +- 0.31 (0.00-->7.45)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+positioning took 9.2 minutes
+-white NOWRITE indicates that white, curv, area, and cortex.label files will not be written...
+reading original vertex positions from white.deformed
+using filled.hires as filled name
+using wm.hires as filled name
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.greynorm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+331658 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.white.deformed...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (94.0): 94.5 +- 8.3 [70.0 --> 110.0]
+GM (85.0) : 83.5 +- 10.9 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 64.1 (was 70)
+setting MAX_BORDER_WHITE to 118.3 (was 105)
+setting MIN_BORDER_WHITE to 75.0 (was 85)
+setting MAX_CSF to 42.3 (was 40)
+setting MAX_GRAY to 101.7 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 69.6 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 31.4 (was 40)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/terrier_001/users/nicks/freesurfer/average/colortable_desikan_killiany.txt)
+repositioning cortical surface to gray/white boundary
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+smoothing T1 volume with sigma = 2.000
+vertex spacing 0.82 +- 0.24 (0.01-->5.82) (max @ vno 170326 --> 170327)
+face area 0.28 +- 0.14 (0.00-->4.64)
+mean absolute distance = 1.65 +- 1.59
+4561 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+vertex spacing 0.88 +- 0.29 (0.05-->6.41) (max @ vno 170326 --> 170327)
+face area 0.28 +- 0.16 (0.00-->4.36)
+mean absolute distance = 0.72 +- 0.82
+3144 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+vertex spacing 0.87 +- 0.27 (0.08-->6.38) (max @ vno 170326 --> 170327)
+face area 0.32 +- 0.18 (0.00-->5.29)
+mean absolute distance = 0.48 +- 0.65
+4144 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+vertex spacing 0.87 +- 0.26 (0.06-->6.30) (max @ vno 170326 --> 170327)
+face area 0.31 +- 0.17 (0.00-->5.14)
+mean absolute distance = 0.37 +- 0.55
+5400 vertices more than 2 sigmas from mean.
+averaging target values for 5 iterations...
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+writing pial surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.pial...
+writing smoothed curvature to rh.curv.pial
+writing smoothed area to rh.area.pial
+vertex spacing 1.01 +- 0.43 (0.04-->8.78) (max @ vno 121513 --> 121514)
+face area 0.41 +- 0.31 (0.00-->9.92)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+positioning took 9.2 minutes
+using T2 threshold of 2.00 sigmas above the mean (default=2)
+using T2 threshold of 3.00 sigmas below the mean (default=2)
+using filled.hires as filled name
+using wm.hires as filled name
+reading original vertex positions from white.deformed
+reading previously compute gray/white surface
+refining pial surfaces placement using T2 volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T2w_hires.norm
+appending .postT2.pass2 to output names...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.norm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+304819 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.white.deformed...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (95.0): 95.2 +- 8.0 [70.0 --> 110.0]
+GM (85.0) : 83.7 +- 11.3 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 60.7 (was 70)
+setting MAX_BORDER_WHITE to 111.0 (was 105)
+setting MIN_BORDER_WHITE to 72.0 (was 85)
+setting MAX_CSF to 49.5 (was 40)
+setting MAX_GRAY to 95.0 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 66.4 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 38.2 (was 40)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/terrier_001/users/nicks/freesurfer/average/colortable_desikan_killiany.txt)
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+writing pial surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/lh.pial.postT2.pass2...
+writing smoothed curvature to lh.curv.pial.postT2.pass2
+writing smoothed area to lh.area.pial.postT2.pass2
+vertex spacing 1.00 +- 0.43 (0.06-->5.95) (max @ vno 109068 --> 107845)
+face area 0.40 +- 0.31 (0.00-->8.32)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+positioning took 11.1 minutes
+using T2 threshold of 2.00 sigmas above the mean (default=2)
+using T2 threshold of 3.00 sigmas below the mean (default=2)
+using filled.hires as filled name
+using wm.hires as filled name
+reading original vertex positions from white.deformed
+reading previously compute gray/white surface
+refining pial surfaces placement using T2 volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T2w_hires.norm
+appending .postT2.pass2 to output names...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/filled.hires.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/T1w_hires.norm.mgz...
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/wm.hires.mgz...
+333436 bright wm thresholded.
+0 bright non-wm voxels segmented.
+reading original surface position from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.white.deformed...
+computing class statistics...
+border white:    710602 voxels (3.38%)
+border gray      749050 voxels (3.56%)
+WM (94.0): 94.8 +- 7.9 [70.0 --> 110.0]
+GM (85.0) : 84.0 +- 10.7 [30.0 --> 110.0]
+setting MIN_GRAY_AT_WHITE_BORDER to 64.3 (was 70)
+setting MAX_BORDER_WHITE to 117.9 (was 105)
+setting MIN_BORDER_WHITE to 75.0 (was 85)
+setting MAX_CSF to 53.7 (was 40)
+setting MAX_GRAY to 102.1 (was 95)
+setting MAX_GRAY_AT_CSF_BORDER to 69.7 (was 75)
+setting MIN_GRAY_AT_CSF_BORDER to 43.0 (was 40)
+reading colortable from annotation file...
+colortable with 36 entries read (originally /autofs/space/terrier_001/users/nicks/freesurfer/average/colortable_desikan_killiany.txt)
+reading volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/aseg.hires.mgz...
+repositioning cortical surface to gray/csf boundary.
+smoothing T1 volume with sigma = 2.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 1.000
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.500
+averaging target values for 5 iterations...
+smoothing T1 volume with sigma = 0.250
+averaging target values for 5 iterations...
+writing pial surface to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/surf/rh.pial.postT2.pass2...
+writing smoothed curvature to rh.curv.pial.postT2.pass2
+writing smoothed area to rh.area.pial.postT2.pass2
+vertex spacing 1.00 +- 0.43 (0.03-->8.01) (max @ vno 121526 --> 121527)
+face area 0.40 +- 0.31 (0.00-->10.65)
+measuring cortical thickness...
+writing cortical thickness estimate to 'thickness' file.
+positioning took 11.4 minutes

@@ -1,0 +1,3 @@
+Image Exception : #22 :: ERROR: Could not open image /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/MNINonLinear/BiasField
+libc++abi.dylib: terminating with uncaught exception of type RBD_COMMON::BaseException
+/Applications/Preprocessing/Pipelines-master/fMRIVolume/scripts/OneStepResampling.sh: line 135: 39808 Abort trap: 6           ${FSLDIR}/bin/applywarp --rel --interp=spline -i ${BiasField} -r ${WD}/${FreeSurferBrainMaskFile}.${FinalfMRIResolution}.nii.gz --premat=$FSLDIR/etc/flirtsch/ident.mat -o ${WD}/${BiasFieldFile}.${FinalfMRIResolution}

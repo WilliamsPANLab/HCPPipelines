@@ -1,0 +1,108 @@
+Fri Oct 27 16:22:32 PDT 2017 - PreFreeSurferPipeline.sh - Platform Information Follows: 
+Darwin DN52eiqn.SUNet 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64 x86_64
+Fri Oct 27 16:22:32 PDT 2017 - PreFreeSurferPipeline.sh - Parsing Command Line Options
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - Finished Parsing Command Line Options
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - StudyFolder: /Users/brookestaveland/Desktop/HCP_examples
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - Subject: Pilot2016
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T1wInputImages: /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/unprocessed/3T/T1w_MPR1/Pilot2016_3T_T1w_MPR1.nii.gz@
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T2wInputImages: /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/unprocessed/3T/T2w_SPC1/Pilot2016_3T_T2w_SPC1.nii.gz@
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T1wTemplate: /Applications/Preprocessing/Pipelines-master/global/templates/MNI152_T1_0.7mm.nii.gz
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T1wTemplateBrain: /Applications/Preprocessing/Pipelines-master/global/templates/MNI152_T1_0.7mm_brain.nii.gz
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T1wTemplate2mm: /Applications/Preprocessing/Pipelines-master/global/templates/MNI152_T1_2mm.nii.gz
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T2wTemplate: /Applications/Preprocessing/Pipelines-master/global/templates/MNI152_T2_0.7mm.nii.gz
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T2wTemplateBrain: /Applications/Preprocessing/Pipelines-master/global/templates/MNI152_T2_0.7mm_brain.nii.gz
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T2wTemplate2mm: /Applications/Preprocessing/Pipelines-master/global/templates/MNI152_T2_2mm.nii.gz
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - TemplateMask: /Applications/Preprocessing/Pipelines-master/global/templates/MNI152_T1_0.7mm_brain_mask.nii.gz
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - Template2mmMask: /Applications/Preprocessing/Pipelines-master/global/templates/MNI152_T1_2mm_brain_mask_dil.nii.gz
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - BrainSize: 160
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - FNIRTConfig: /Applications/Preprocessing/Pipelines-master/global/config/T1_2_MNI152_2mm.cnf
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - MagnitudeInputName: 
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - PhaseInputName: 
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - GEB0InputName: NONE
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - TE: 2.46
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - SpinEchoPhaseEncodeNegative: NONE
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - SpinEchoPhaseEncodePositive: NONE
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - DwellTime: NONE
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - SEUnwarpDir: NONE
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T1wSampleSpacing: 0.0000074
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T2wSampleSpacing: 0.0000021
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - UnwarpDir: z
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - GradientDistortionCoeffs: NONE
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - AvgrdcSTRING: NONE
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - TopupConfig: NONE
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - BiasFieldSmoothingSigma: 
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - UseJacobian: true
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - FSLDIR: /Applications/Preprocessing/fsl
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - HCPPIPEDIR: /Applications/Preprocessing/Pipelines-master
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - HCPPIPEDIR_Global: /Applications/Preprocessing/Pipelines-master/global/scripts
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - HCPPIPEDIR_PreFS: /Applications/Preprocessing/Pipelines-master/PreFreeSurfer/scripts
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T1wFolder: /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - T2wFolder: /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T2w
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - AtlasSpaceFolder: /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/MNINonLinear
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/xfms/
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T2w/xfms/
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/MNINonLinear/xfms/
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - POSIXLY_CORRECT=y
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - Processing Modality:  T1w
+Fri Oct 27 16:22:34 PDT 2017 - PreFreeSurferPipeline.sh - NOT PERFORMING GRADIENT DISTORTION CORRECTION
+Fri Oct 27 16:22:45 PDT 2017 - PreFreeSurferPipeline.sh - Not Averaging T1w Images
+Fri Oct 27 16:22:45 PDT 2017 - PreFreeSurferPipeline.sh - ONLY ONE AVERAGE FOUND: COPYING
+Fri Oct 27 16:22:45 PDT 2017 - PreFreeSurferPipeline.sh - Aligning T1w image to 0.7mm MNI T1wTemplate to create native volume space
+Fri Oct 27 16:22:45 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/ACPCAlignment
+ 
+ START: ACPCAlignment
+Final FOV is: 
+0.000000 216.000000 0.000000 512.000000 96.000000 341.000000 
+
+ 
+ END: ACPCAlignment
+Fri Oct 27 16:26:32 PDT 2017 - PreFreeSurferPipeline.sh - Performing Brain Extraction using FNIRT-based Masking
+Fri Oct 27 16:26:32 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/BrainExtraction_FNIRTbased
+ 
+ START: BrainExtraction_FNIRT
+ 
+ END: BrainExtraction_FNIRT
+Fri Oct 27 16:34:18 PDT 2017 - PreFreeSurferPipeline.sh - Processing Modality:  T2w
+Fri Oct 27 16:34:18 PDT 2017 - PreFreeSurferPipeline.sh - NOT PERFORMING GRADIENT DISTORTION CORRECTION
+Fri Oct 27 16:34:28 PDT 2017 - PreFreeSurferPipeline.sh - Not Averaging T2w Images
+Fri Oct 27 16:34:28 PDT 2017 - PreFreeSurferPipeline.sh - ONLY ONE AVERAGE FOUND: COPYING
+Fri Oct 27 16:34:28 PDT 2017 - PreFreeSurferPipeline.sh - Aligning T2w image to 0.7mm MNI T2wTemplate to create native volume space
+Fri Oct 27 16:34:28 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T2w/ACPCAlignment
+ 
+ START: ACPCAlignment
+Final FOV is: 
+0.000000 212.000000 0.000000 512.000000 98.000000 341.000000 
+
+ 
+ END: ACPCAlignment
+Fri Oct 27 16:38:17 PDT 2017 - PreFreeSurferPipeline.sh - Performing Brain Extraction using FNIRT-based Masking
+Fri Oct 27 16:38:17 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T2w/BrainExtraction_FNIRTbased
+ 
+ START: BrainExtraction_FNIRT
+ 
+ END: BrainExtraction_FNIRT
+Fri Oct 27 16:45:53 PDT 2017 - PreFreeSurferPipeline.sh - NOT PERFORMING READOUT DISTORTION CORRECTION
+Fri Oct 27 16:45:53 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T2w/T2wToT1wReg
+ 
+ START: T2w2T1Reg
+Running FAST segmentation
+FLIRT pre-alignment
+Running BBR
+0.338755 0.999969 0.004185 -0.006602 0.000000 -0.004332 0.999740 -0.022388 0.000000 0.006506 0.022416 0.999728 0.000000 -0.349733 -2.506793 5.907278 1.000000 
+ 
+ START: T2w2T1Reg
+Fri Oct 27 17:51:40 PDT 2017 - PreFreeSurferPipeline.sh - Performing Bias Field Correction
+Fri Oct 27 17:51:40 PDT 2017 - PreFreeSurferPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/BiasFieldCorrection_sqrtT1wXT1w
+ 
+ START: BiasFieldCorrection
+0.202287
+0.983406
+.8822625
+ 
+ END: BiasFieldCorrection
+Fri Oct 27 18:19:27 PDT 2017 - PreFreeSurferPipeline.sh - Performing Atlas Registration to MNI152 (FLIRT and FNIRT)
+ 
+ START: AtlasRegistration to MNI152
+ 
+ END: AtlasRegistration to MNI152
+Fri Oct 27 19:10:57 PDT 2017 - PreFreeSurferPipeline.sh - Completed

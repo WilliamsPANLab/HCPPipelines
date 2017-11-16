@@ -1,0 +1,24 @@
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - Parsing Command Line Options
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - Finished Parsing Command Line Options
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - SubjectID: 100307
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - SubjectDIR: /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - T1wImage: /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T1w_acpc_dc_restore.nii.gz
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - T1wImageBrain: /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T1w_acpc_dc_restore_brain.nii.gz
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - T2wImage: /Users/brookestaveland/Desktop/HCP_Examples/100307/T1w/T2w_acpc_dc_restore.nii.gz
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - recon_all_seed: 
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - seed_cmd_appendix: 
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - HCPPIPEDIR: /Applications/Preprocessing/Pipelines-master
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - HCPPIPEDIR_FS: /Applications/Preprocessing/Pipelines-master/FreeSurfer/scripts
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - which flirt: /Applications/Preprocessing/fsl/bin/flirt
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - flirt -version: FLIRT version 6.0
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - which applywarp: /Applications/Preprocessing/fsl/bin/applywarp
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - which fslstats: /Applications/Preprocessing/fsl/bin/fslstats
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - which fslmaths: /Applications/Preprocessing/fsl/bin/fslmaths
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - which recon-all: /Applications/Preprocessing/freesurfer/bin/recon-all
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - recon-all --version: $Id: recon-all,v 1.379.2.73 2013/05/12 23:15:37 nicks Exp $
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - which mri_convert: /Applications/Preprocessing/freesurfer/bin/mri_convert
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - which mri_em_register: /Applications/Preprocessing/freesurfer/bin/mri_em_register
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - mri_em_register --version: stable5
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - which mri_watershed: /Applications/Preprocessing/freesurfer/bin/mri_watershed
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - mri_watershed --version: stable5
+Thu Sep 28 14:45:35 PDT 2017 - FreeSurferPipeline.sh - Make Spline Interpolated Downsample to 1mm

@@ -1,0 +1,1063 @@
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - Parsing Command Line Options
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - Path: /Users/brookestaveland/Desktop/HCP_examples
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - Subject: Pilot2016
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - NameOffMRI: rfMRI_REST1_AP
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - fMRITimeSeries: /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/unprocessed/3T/rfMRI_REST1_AP/Pilot2016_3T_rfMRI_REST1_AP.nii.gz
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - fMRIScout: NONE
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - SpinEchoPhaseEncodeNegative: NONE
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - SpinEchoPhaseEncodePositive: NONE
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - MagnitudeInputName: NONE
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - PhaseInputName: NONE
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - GEB0InputName: /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/unprocessed/3T/rfMRI_REST1_AP/Pilot2016_3T_GradientEchoFieldMap.nii.gz
+Fri Oct 27 12:20:44 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - DwellTime: .001600
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - deltaTE: NONE
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - UnwarpDir: x-
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - FinalfMRIResolution: 2
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - DistortionCorrection: GeneralElectricFieldMap
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - BiasCorrection: NONE
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - GradientDistortionCoeffs: NONE
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - TopupConfig: /Applications/Preprocessing/Pipelines-master/global/config/b02b0.cnf
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - dof: 6
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - RUN: 
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - UseJacobian: 
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - JacobianDefault: false
+Fri Oct 27 12:20:45 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - After taking default value if necessary, UseJacobian: false
+Fri Oct 27 12:21:04 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - Gradient Distortion Correction of fMRI
+Fri Oct 27 12:21:04 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - NOT PERFORMING GRADIENT DISTORTION CORRECTION
+Fri Oct 27 12:21:16 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection
+Fri Oct 27 12:21:16 PDT 2017 - MotionCorrection.sh - START
+Fri Oct 27 12:21:16 PDT 2017 - MotionCorrection.sh - Do motion correction
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0000
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0001
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0002
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0003
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0004
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0005
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0006
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0007
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0008
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0009
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0010
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0011
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0012
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0013
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0014
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0015
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0016
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0017
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0018
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0019
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0020
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0021
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0022
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0023
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0024
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0025
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0026
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0027
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0028
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0029
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0030
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0031
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0032
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0033
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0034
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0035
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0036
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0037
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0038
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0039
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0040
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0041
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0042
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0043
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0044
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0045
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0046
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0047
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0048
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0049
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0050
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0051
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0052
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0053
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0054
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0055
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0056
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0057
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0058
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0059
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0060
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0061
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0062
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0063
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0064
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0065
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0066
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0067
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0068
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0069
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0070
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0071
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0072
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0073
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0074
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0075
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0076
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0077
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0078
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0079
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0080
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0081
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0082
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0083
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0084
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0085
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0086
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0087
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0088
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0089
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0090
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0091
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0092
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0093
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0094
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0095
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0096
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0097
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0098
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0099
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0100
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0101
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0102
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0103
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0104
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0105
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0106
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0107
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0108
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0109
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0110
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0111
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0112
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0113
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0114
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0115
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0116
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0117
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0118
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0119
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0120
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0121
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0122
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0123
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0124
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0125
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0126
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0127
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0128
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0129
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0130
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0131
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0132
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0133
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0134
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0135
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0136
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0137
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0138
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0139
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0140
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0141
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0142
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0143
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0144
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0145
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0146
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0147
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0148
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0149
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0150
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0151
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0152
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0153
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0154
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0155
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0156
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0157
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0158
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0159
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0160
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0161
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0162
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0163
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0164
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0165
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0166
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0167
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0168
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0169
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0170
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0171
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0172
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0173
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0174
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0175
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0176
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0177
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0178
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0179
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0180
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0181
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0182
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0183
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0184
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0185
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0186
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0187
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0188
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0189
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0190
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0191
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0192
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0193
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0194
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0195
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0196
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0197
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0198
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0199
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0200
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0201
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0202
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0203
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0204
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0205
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0206
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0207
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0208
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0209
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0210
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0211
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0212
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0213
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0214
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0215
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0216
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0217
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0218
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0219
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0220
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0221
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0222
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0223
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0224
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0225
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0226
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0227
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0228
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0229
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0230
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0231
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0232
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0233
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0234
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0235
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0236
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0237
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0238
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0239
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0240
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0241
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0242
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0243
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0244
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0245
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0246
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0247
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0248
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0249
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0250
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0251
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0252
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0253
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0254
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0255
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0256
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0257
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0258
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0259
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0260
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0261
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0262
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0263
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0264
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0265
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0266
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0267
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0268
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0269
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0270
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0271
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0272
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0273
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0274
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0275
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0276
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0277
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0278
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0279
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0280
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0281
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0282
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0283
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0284
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0285
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0286
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0287
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0288
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0289
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0290
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0291
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0292
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0293
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0294
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0295
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0296
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0297
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0298
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0299
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0300
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0301
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0302
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0303
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0304
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0305
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0306
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0307
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0308
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0309
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0310
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0311
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0312
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0313
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0314
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0315
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0316
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0317
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0318
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0319
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0320
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0321
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0322
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0323
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0324
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0325
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0326
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0327
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0328
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0329
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0330
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0331
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0332
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0333
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0334
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0335
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0336
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0337
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0338
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0339
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0340
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0341
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0342
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0343
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0344
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0345
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0346
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0347
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0348
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0349
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0350
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0351
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0352
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0353
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0354
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0355
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0356
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0357
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0358
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0359
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0360
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0361
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0362
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0363
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0364
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0365
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0366
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0367
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0368
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0369
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0370
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0371
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0372
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0373
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0374
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0375
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0376
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0377
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0378
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0379
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0380
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0381
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0382
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0383
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0384
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0385
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0386
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0387
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0388
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0389
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0390
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0391
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0392
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0393
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0394
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0395
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0396
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0397
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0398
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0399
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0400
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0401
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0402
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0403
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0404
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0405
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0406
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0407
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0408
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0409
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0410
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0411
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0412
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0413
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0414
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0415
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0416
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0417
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0418
+processing /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/MotionCorrection/rfMRI_REST1_AP_mc.mat/MAT_0419
+Fri Oct 27 12:25:12 PDT 2017 - MotionCorrection.sh - Change names of all matrices in OutputMotionMatrixFolder
+Fri Oct 27 12:25:16 PDT 2017 - MotionCorrection.sh - Run the Derive function to generate appropriate regressors from the par file
+Fri Oct 27 12:25:57 PDT 2017 - MotionCorrection.sh - END
+Fri Oct 27 12:25:57 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - EPI Distortion Correction and EPI to T1w Registration
+Fri Oct 27 12:25:57 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased
+Fri Oct 27 12:25:58 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - START
+ 
+ START: Field Map Preprocessing and Gradient Unwarping
+DONE: preparing General Electric fieldmap
+ 
+ END: Field Map Preprocessing and Gradient Unwarping
+Running FAST segmentation
+FLIRT pre-alignment
+Registering fieldmap to structural
+Running BBR with fieldmap
+0.955587 0.995575 0.077204 0.053572 0.000000 -0.077843 0.996916 0.009949 0.000000 -0.052639 -0.014075 0.998514 0.000000 23.012747 -9.382637 -9.216527 1.000000 
+Making warp fields and applying registration to EPI series
+Fri Oct 27 12:53:19 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - do not apply Jacobian correction to scout image
+Fri Oct 27 12:53:19 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Check to see if FreeSurferNHP.sh was used
+Fri Oct 27 12:53:19 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016_1mm does not exist. FreeSurferNHP.sh was not used.
+Fri Oct 27 12:53:19 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Run Normally
+Fri Oct 27 12:53:19 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Use "hidden" bbregister DOF options
+Log file is /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.log
+Fri Oct 27 12:53:19 PDT 2017
+
+setenv SUBJECTS_DIR /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w
+cd /Applications/Preprocessing/Pipelines-master/Examples/Scripts
+/Applications/Preprocessing/freesurfer/bin/bbregister --s Pilot2016 --mov /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz --surf white.deformed --init-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/transforms/eye.dat --bold --reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --6 --o /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz
+
+$Id: bbregister,v 1.49.2.3 2013/03/25 18:04:53 greve Exp $
+Darwin DN52eiqn.SUNet 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 15 17:36:27 PDT 2017; root:xnu-3789.70.16~2/RELEASE_X86_64 x86_64
+FREESURFER_HOME /Applications/Preprocessing/freesurfer
+mri_convert /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii
+mri_convert /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii 
+$Id: mri_convert.c,v 1.179.2.7 2012/09/05 21:55:16 mreuter Exp $
+reading from /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz...
+TR=720.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+writing to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii...
+mri_segreg --mov /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii --init-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/transforms/eye.dat --out-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white.deformed --gm-proj-frac 0.5 --gm-gt-wm 0.5
+$Id: mri_segreg.c,v 1.103.2.1 2011/10/07 19:14:42 greve Exp $
+setenv SUBJECTS_DIR /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w
+cd /Applications/Preprocessing/Pipelines-master/Examples/Scripts
+mri_segreg --mov /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii --init-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/transforms/eye.dat --out-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/bbr.pass1.dat --subsamp-brute 100 --subsamp 100 --tol 1e-4 --tol1d 1e-3 --brute -4 4 4 --surf white.deformed --gm-proj-frac 0.5 --gm-gt-wm 0.5 
+sysname  Darwin
+hostname DN52eiqn.SUNet
+machine  x86_64
+user     brookestaveland
+movvol /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii
+regfile /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/Pilot2016/mri/transforms/eye.dat
+subject Pilot2016
+dof 6
+outregfile /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/bbr.pass1.dat
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 100
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white.deformed
+GMProjFrac 0.500000
+WMProjAbs 2.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000100
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1509482733
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+ 1.000   0.000   0.000   0.000;
+ 0.000   1.000   0.000   0.000;
+ 0.000   0.000   1.000   0.000;
+ 0.000   0.000   0.000   1.000;
+
+Loading mov
+Projecting LH Surfs
+Loading lh.white.deformed surf
+Loading lh.thickness for GM
+GM Proj: 1 0.500000 2.000000
+WM Proj: 0 0.500000 2.000000
+Projecting RH Surfs
+Loading rh.white.deformed surf
+Loading rh.thickness
+Projecting RH Surfs
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   1.014037
+ 1  -25.0 -25.0  25.0   0.997037
+ 2  -25.0  25.0 -25.0   1.016197
+ 3  -25.0  25.0  25.0   0.989577
+ 4   25.0 -25.0 -25.0   1.025281
+ 5   25.0 -25.0  25.0   1.021257
+ 6   25.0  25.0 -25.0   1.005223
+ 7   25.0  25.0  25.0   0.999651
+REL:  8  0.974367    8.068260  1.008532 rel = 0.966123 
+Initial costs ----------------
+Number of surface hits 3263
+WM  Intensity  4636.0551 +/- 2222.9727
+Ctx Intensity  4578.4091 +/- 2255.6129
+Pct Contrast     -1.4272 +/-  34.6793
+Cost   0.9744
+RelCost   0.9661
+
+
+WARNING: initial G-W contrast is negative, but expecting positive.
+If the mov data has a T1 contrast, re-run with --T1
+
+
+
+------------------------------------
+Brute force preopt -4 4 4, n = 729
+     0  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000      0.9879   0.9879  0.0
+     1  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000   0.0000      0.9716   0.9716  0.0
+     2  -4.0000  -4.0000  -4.0000  -4.0000  -4.0000   4.0000      0.9643   0.9643  0.0
+     5  -4.0000  -4.0000  -4.0000  -4.0000   0.0000   4.0000      0.9606   0.9606  0.0
+    10  -4.0000  -4.0000  -4.0000   0.0000  -4.0000   0.0000      0.9391   0.9391  0.0
+   424   0.0000   4.0000  -4.0000   4.0000  -4.0000   0.0000      0.9386   0.9386  0.0
+Brute Force --------------------------
+Min cost was 0.938563
+Number of iterations   729
+Search time 1.374000 sec
+Parameters at best (transmm, rotdeg)
+  0.000   4.000  -4.000  4.000 -4.000  0.000 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 0
+1 4
+2 -4
+3 4
+4 -4
+5 0
+   3 -1.618  4.000 -4.000  4.000 -4.000  0.000   0.9369596688
+   4 -0.866  4.000 -4.000  4.000 -4.000  0.000   0.9321182119
+   6 -0.535  4.000 -4.000  4.000 -4.000  0.000   0.9284294682
+   8 -0.594  4.000 -4.000  4.000 -4.000  0.000   0.9280089769
+   9 -0.666  4.000 -4.000  4.000 -4.000  0.000   0.9278618221
+  12 -0.695  4.000 -4.000  4.000 -4.000  0.000   0.9276697681
+  14 -0.691  4.000 -4.000  4.000 -4.000  0.000   0.9276637066
+  21 -0.691  3.382 -4.000  4.000 -4.000  0.000   0.9207303203
+  23 -0.691  3.424 -4.000  4.000 -4.000  0.000   0.9202636368
+  27 -0.691  3.417 -4.000  4.000 -4.000  0.000   0.9202459610
+  31 -0.691  3.415 -4.000  4.000 -4.000  0.000   0.9202440721
+  34 -0.691  3.415 -3.000  4.000 -4.000  0.000   0.9084622029
+  39 -0.691  3.415 -2.790  4.000 -4.000  0.000   0.9070634094
+  40 -0.691  3.415 -2.771  4.000 -4.000  0.000   0.9065577558
+  53 -0.691  3.415 -2.771  4.150 -4.000  0.000   0.9055014177
+  55 -0.691  3.415 -2.771  4.132 -4.000  0.000   0.9054317009
+  69 -0.691  3.415 -2.771  4.132 -4.027  0.000   0.9051776125
+  70 -0.691  3.415 -2.771  4.132 -4.034  0.000   0.9051736899
+  71 -0.691  3.415 -2.771  4.132 -4.032  0.000   0.9051715100
+  94 -0.836  3.415 -2.771  4.132 -4.032  0.000   0.9031735628
+  95 -0.891  3.415 -2.771  4.132 -4.032  0.000   0.9022685064
+  98 -0.902  3.415 -2.771  4.132 -4.032  0.000   0.9022356966
+  99 -0.903  3.415 -2.771  4.132 -4.032  0.000   0.9022349585
+ 100 -0.904  3.415 -2.771  4.132 -4.032  0.000   0.9022347141
+ 111 -0.904  3.414 -2.771  4.132 -4.032  0.000   0.9022220276
+ 113 -0.904  3.406 -2.771  4.132 -4.032  0.000   0.9021954683
+ 116 -0.904  3.405 -2.771  4.132 -4.032  0.000   0.9021948710
+ 125 -0.904  3.405 -2.767  4.132 -4.032  0.000   0.9021816502
+ 126 -0.904  3.405 -2.760  4.132 -4.032  0.000   0.9021785427
+ 128 -0.904  3.405 -2.763  4.132 -4.032  0.000   0.9021770078
+ 137 -0.904  3.405 -2.763  4.041 -4.032  0.000   0.9016421059
+ 138 -0.904  3.405 -2.763  4.006 -4.032  0.000   0.9015709301
+ 143 -0.904  3.405 -2.763  4.008 -4.032  0.000   0.9015230643
+ 144 -0.904  3.405 -2.763  4.009 -4.032  0.000   0.9014931409
+ 153 -0.904  3.405 -2.763  4.009 -4.042  0.000   0.9013161894
+ 154 -0.904  3.405 -2.763  4.009 -4.058  0.000   0.9011894077
+ 164 -0.904  3.405 -2.763  4.009 -4.058  0.002   0.9011572105
+ 167 -0.904  3.405 -2.763  4.009 -4.058  0.010   0.9010471450
+ 168 -0.904  3.405 -2.763  4.009 -4.058  0.018   0.9009521386
+ 169 -0.904  3.405 -2.763  4.009 -4.058  0.023   0.9009032546
+ 170 -0.904  3.405 -2.763  4.009 -4.058  0.026   0.9008747493
+ 182 -0.899  3.405 -2.763  4.009 -4.058  0.026   0.9008258521
+Powell done niters = 2
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.996644
+ 1  -25.0 -25.0  25.0   1.006082
+ 2  -25.0  25.0 -25.0   0.981005
+ 3  -25.0  25.0  25.0   0.959493
+ 4   25.0 -25.0 -25.0   1.015572
+ 5   25.0 -25.0  25.0   0.992179
+ 6   25.0  25.0 -25.0   0.979218
+ 7   25.0  25.0  25.0   0.997005
+REL:  8  0.900826    7.927197  0.990900 rel = 0.909099 
+Number of iterations     2
+Min cost was 0.900826
+Number of FunctionCalls   259
+TolPowell 0.000100
+nMaxItersPowell 36
+OptimizationTime 0.475000 sec
+Parameters at optimum (transmm) -0.89859  3.40458 -2.76311
+Parameters at optimum (rotdeg)  4.00922 -4.05754  0.02638 
+Final costs ----------------
+Number of surface hits 3260
+WM  Intensity  4518.4691 +/- 2213.4366
+Ctx Intensity  4506.7894 +/- 2262.8158
+Pct Contrast    159.6538 +/- 9142.7458
+Cost   0.9008
+RelCost   0.9661
+Reg at min cost was 
+ 0.997  -0.005  -0.071  -0.899;
+ 0.000   0.998  -0.070   3.405;
+ 0.071   0.070   0.995  -2.763;
+ 0.000   0.000   0.000   1.000;
+
+Writing optimal reg to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/bbr.pass1.dat, type = 14 
+Original Reg 
+ 1.000   0.000   0.000   0.000;
+ 0.000   1.000   0.000   0.000;
+ 0.000   0.000   1.000   0.000;
+ 0.000   0.000   0.000   1.000;
+
+Original Reg - Optimal Reg
+ 0.003   0.005   0.071   0.899;
+-0.000   0.002   0.070  -3.405;
+-0.071  -0.070   0.005   2.763;
+ 0.000   0.000   0.000   0.000;
+
+Computing change in lh position
+LH rmsDiffMean 7.646298
+Computing change in rh position
+Surface RMS Diff (mm) 6.639839 12.125701
+
+
+WARNING: initial G-W contrast was negative, but expected positive.
+If the mov data has a T1 contrast, re-run with --T1
+
+
+mri_segreg done
+mri_segreg --mov /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii --init-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/bbr.pass1.dat --out-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --brute -0.1 0.1 0.1 --interp trilinear --wm-proj-abs 2 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.mincost --dof 6 --nmax 36 --param /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.param --surf white.deformed --cur-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/reg.curopt.dat --gm-proj-frac 0.5 --nsub 1 --o /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz --gm-gt-wm 0.5
+$Id: mri_segreg.c,v 1.103.2.1 2011/10/07 19:14:42 greve Exp $
+setenv SUBJECTS_DIR /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w
+cd /Applications/Preprocessing/Pipelines-master/Examples/Scripts
+mri_segreg --mov /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii --init-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/bbr.pass1.dat --out-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --brute -0.1 0.1 0.1 --interp trilinear --wm-proj-abs 2 --tol 1e-8 --tol1d 1e-3 --c0 0 --mincost /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.mincost --dof 6 --nmax 36 --param /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat.param --surf white.deformed --cur-reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/reg.curopt.dat --gm-proj-frac 0.5 --nsub 1 --o /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz --gm-gt-wm 0.5 
+sysname  Darwin
+hostname DN52eiqn.SUNet
+machine  x86_64
+user     brookestaveland
+movvol /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/template.nii
+regfile /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/tmp.bbregister.12611/bbr.pass1.dat
+subject Pilot2016
+dof 6
+outregfile /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat
+outfile /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz
+UseMask 0
+UseLH 1
+UseRH 1
+nsubsamp 1
+PenaltySign  -1
+PenaltySlope 0.500000
+PenaltyCenter 0.000000
+surfname white.deformed
+GMProjFrac 0.500000
+WMProjAbs 2.000000
+lhcostfile (null)
+rhcostfile (null)
+interp  trilinear (1)
+frame  0
+TolPowell 0.000000
+nMaxItersPowell 36
+n1dmin  3
+Profile   0
+Gdiag_no  -1
+AddNoise  0 (0)
+SynthSeed 1509366247
+TransRandMax 0.000000
+RotRandMax 0.000000
+Translations 0.000000 0.000000 0.000000
+Rotations   0.000000 0.000000 0.000000
+Input reg
+ 0.997  -0.005  -0.071  -0.899;
+ 0.000   0.998  -0.070   3.405;
+ 0.071   0.070   0.995  -2.763;
+ 0.000   0.000   0.000   1.000;
+
+Loading mov
+Projecting LH Surfs
+Loading lh.white.deformed surf
+Loading lh.thickness for GM
+GM Proj: 1 0.500000 2.000000
+WM Proj: 0 0.500000 2.000000
+Projecting RH Surfs
+Loading rh.white.deformed surf
+Loading rh.thickness
+Projecting RH Surfs
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.981342
+ 1  -25.0 -25.0  25.0   1.003561
+ 2  -25.0  25.0 -25.0   0.983626
+ 3  -25.0  25.0  25.0   0.970256
+ 4   25.0 -25.0 -25.0   0.995043
+ 5   25.0 -25.0  25.0   0.994293
+ 6   25.0  25.0 -25.0   0.981988
+ 7   25.0  25.0  25.0   0.998226
+REL:  8  0.966981    7.908336  0.988542 rel = 0.978189 
+Initial costs ----------------
+Number of surface hits 324846
+WM  Intensity  4534.0912 +/- 2243.2959
+Ctx Intensity  4487.8892 +/- 2300.9313
+Pct Contrast     -0.4109 +/- 916.7195
+Cost   0.9670
+RelCost   0.9782
+
+
+WARNING: initial G-W contrast is negative, but expecting positive.
+If the mov data has a T1 contrast, re-run with --T1
+
+
+
+------------------------------------
+Brute force preopt -0.1 0.1 0.1, n = 729
+     0  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000      0.9069   0.9069  0.0
+     2  -0.1000  -0.1000  -0.1000  -0.1000  -0.1000   0.1000      0.9064   0.9064  0.0
+     3  -0.1000  -0.1000  -0.1000  -0.1000   0.0000  -0.1000      0.9041   0.9041  0.0
+     6  -0.1000  -0.1000  -0.1000  -0.1000   0.1000  -0.1000      0.9016   0.9016  0.0
+   283   0.0000  -0.1000   0.0000   0.0000   0.0000   0.0000      0.9014   0.9014  0.0
+   285   0.0000  -0.1000   0.0000   0.0000   0.1000  -0.1000      0.9013   0.9013  0.0
+   364   0.0000   0.0000   0.0000   0.0000   0.0000   0.0000      0.9008   0.9008  0.0
+Brute Force --------------------------
+Min cost was 0.900826
+Number of iterations   729
+Search time 1.288000 sec
+Parameters at best (transmm, rotdeg)
+  0.000   0.000   0.000  0.000  0.000  0.000 
+--------------------------------------------
+
+Starting Powell Minimization
+Init Powel Params dof = 6
+0 0
+1 0
+2 0
+3 0
+4 0
+5 0
+   3 -1.618  0.000  0.000  0.000  0.000  0.000   0.9665494921
+   4 -0.846  0.000  0.000  0.000  0.000  0.000   0.9652844682
+   6 -0.523  0.000  0.000  0.000  0.000  0.000   0.9651092746
+   8 -0.617  0.000  0.000  0.000  0.000  0.000   0.9647795800
+   9 -0.669  0.000  0.000  0.000  0.000  0.000   0.9647010011
+  11 -0.682  0.000  0.000  0.000  0.000  0.000   0.9646853387
+  13 -0.681  0.000  0.000  0.000  0.000  0.000   0.9646853321
+  17 -0.681 -1.618  0.000  0.000  0.000  0.000   0.9582240624
+  22 -0.681 -1.823  0.000  0.000  0.000  0.000   0.9582073261
+  23 -0.681 -1.740  0.000  0.000  0.000  0.000   0.9581558387
+  25 -0.681 -1.770  0.000  0.000  0.000  0.000   0.9581424595
+  27 -0.681 -1.761  0.000  0.000  0.000  0.000   0.9581413513
+  28 -0.681 -1.763  0.000  0.000  0.000  0.000   0.9581400665
+  29 -0.681 -1.765  0.000  0.000  0.000  0.000   0.9581389293
+  30 -0.681 -1.767  0.000  0.000  0.000  0.000   0.9581375948
+  31 -0.681 -1.768  0.000  0.000  0.000  0.000   0.9581368272
+  37 -0.681 -1.768 -0.618  0.000  0.000  0.000   0.9568622742
+  38 -0.681 -1.768 -1.000  0.000  0.000  0.000   0.9568615699
+  41 -0.681 -1.768 -1.090  0.000  0.000  0.000   0.9568286943
+  44 -0.681 -1.768 -1.080  0.000  0.000  0.000   0.9568166562
+  45 -0.681 -1.768 -1.074  0.000  0.000  0.000   0.9568147749
+  56 -0.681 -1.768 -1.075  0.048  0.000  0.000   0.9566969371
+  57 -0.681 -1.768 -1.075  0.050  0.000  0.000   0.9566964419
+  58 -0.681 -1.768 -1.075  0.054  0.000  0.000   0.9566957821
+  70 -0.681 -1.768 -1.075  0.055  0.164  0.000   0.9566225690
+  73 -0.681 -1.768 -1.075  0.055  0.194  0.000   0.9566112378
+  74 -0.681 -1.768 -1.075  0.055  0.185  0.000   0.9566041100
+  84 -0.681 -1.768 -1.075  0.055  0.185 -0.215   0.9562574812
+  85 -0.681 -1.768 -1.075  0.055  0.185 -0.238   0.9562377587
+  87 -0.681 -1.768 -1.075  0.055  0.185 -0.249   0.9562304848
+  89 -0.681 -1.768 -1.075  0.055  0.185 -0.268   0.9562215908
+  91 -0.681 -1.768 -1.075  0.055  0.185 -0.262   0.9562202575
+  99 -1.299 -1.768 -1.075  0.055  0.185 -0.263   0.9550912733
+ 101 -1.362 -1.768 -1.075  0.055  0.185 -0.263   0.9550354601
+ 103 -1.385 -1.768 -1.075  0.055  0.185 -0.263   0.9550352862
+ 107 -1.381 -1.768 -1.075  0.055  0.185 -0.263   0.9550346418
+ 108 -1.380 -1.768 -1.075  0.055  0.185 -0.263   0.9550346295
+ 116 -1.380 -1.593 -1.075  0.055  0.185 -0.263   0.9548709040
+ 117 -1.380 -1.594 -1.075  0.055  0.185 -0.263   0.9548708449
+ 118 -1.380 -1.599 -1.075  0.055  0.185 -0.263   0.9548694742
+ 121 -1.380 -1.608 -1.075  0.055  0.185 -0.263   0.9548641735
+ 122 -1.380 -1.614 -1.075  0.055  0.185 -0.263   0.9548639562
+ 123 -1.380 -1.612 -1.075  0.055  0.185 -0.263   0.9548632210
+ 131 -1.380 -1.612 -0.693  0.055  0.185 -0.263   0.9545557046
+ 132 -1.380 -1.612 -0.752  0.055  0.185 -0.263   0.9544786159
+ 137 -1.380 -1.612 -0.742  0.055  0.185 -0.263   0.9544746566
+ 146 -1.380 -1.612 -0.742  0.198  0.185 -0.263   0.9543693368
+ 149 -1.380 -1.612 -0.742  0.179  0.185 -0.263   0.9543678248
+ 150 -1.380 -1.612 -0.742  0.185  0.185 -0.263   0.9543632408
+ 152 -1.380 -1.612 -0.742  0.184  0.185 -0.263   0.9543602278
+ 159 -1.380 -1.612 -0.742  0.184  0.567 -0.263   0.9539373649
+ 161 -1.380 -1.612 -0.742  0.184  0.472 -0.263   0.9538629868
+ 162 -1.380 -1.612 -0.742  0.184  0.460 -0.263   0.9538434875
+ 164 -1.380 -1.612 -0.742  0.184  0.420 -0.263   0.9538383321
+ 170 -1.380 -1.612 -0.742  0.184  0.419 -0.263   0.9538382864
+ 176 -1.380 -1.612 -0.742  0.184  0.419 -0.881   0.9537608986
+ 178 -1.380 -1.612 -0.742  0.184  0.419 -0.610   0.9534641941
+ 181 -1.380 -1.612 -0.742  0.184  0.419 -0.634   0.9534474569
+ 183 -1.380 -1.612 -0.742  0.184  0.419 -0.631   0.9534458754
+ 193 -0.998 -1.612 -0.742  0.184  0.419 -0.631   0.9531749024
+ 194 -1.100 -1.612 -0.742  0.184  0.419 -0.631   0.9530035243
+ 195 -1.148 -1.612 -0.742  0.184  0.419 -0.631   0.9529990229
+ 199 -1.149 -1.612 -0.742  0.184  0.419 -0.631   0.9529977022
+ 200 -1.163 -1.612 -0.742  0.184  0.419 -0.631   0.9529855301
+ 202 -1.164 -1.612 -0.742  0.184  0.419 -0.631   0.9529852221
+ 203 -1.165 -1.612 -0.742  0.184  0.419 -0.631   0.9529851204
+ 211 -1.165 -1.554 -0.742  0.184  0.419 -0.631   0.9528918322
+ 213 -1.165 -1.567 -0.742  0.184  0.419 -0.631   0.9528800228
+ 214 -1.165 -1.568 -0.742  0.184  0.419 -0.631   0.9528746639
+ 216 -1.165 -1.575 -0.742  0.184  0.419 -0.631   0.9528692441
+ 217 -1.165 -1.573 -0.742  0.184  0.419 -0.631   0.9528665474
+ 219 -1.165 -1.571 -0.742  0.184  0.419 -0.631   0.9528647274
+ 226 -1.165 -1.571 -0.360  0.184  0.419 -0.631   0.9526382650
+ 227 -1.165 -1.571 -0.502  0.184  0.419 -0.631   0.9525913485
+ 230 -1.165 -1.571 -0.534  0.184  0.419 -0.631   0.9525646863
+ 231 -1.165 -1.571 -0.542  0.184  0.419 -0.631   0.9525617221
+ 233 -1.165 -1.571 -0.541  0.184  0.419 -0.631   0.9525616256
+ 242 -1.165 -1.571 -0.541  0.266  0.419 -0.631   0.9524997986
+ 243 -1.165 -1.571 -0.541  0.380  0.419 -0.631   0.9524511402
+ 245 -1.165 -1.571 -0.541  0.337  0.419 -0.631   0.9524161990
+ 247 -1.165 -1.571 -0.541  0.350  0.419 -0.631   0.9524127944
+ 249 -1.165 -1.571 -0.541  0.345  0.419 -0.631   0.9524097206
+ 263 -1.165 -1.571 -0.541  0.344  0.411 -0.631   0.9524055931
+ 274 -1.165 -1.571 -0.541  0.344  0.411 -0.669   0.9523986997
+ 275 -1.165 -1.571 -0.541  0.344  0.411 -0.663   0.9523939895
+ 276 -1.165 -1.571 -0.541  0.344  0.411 -0.653   0.9523886365
+ 277 -1.165 -1.571 -0.541  0.344  0.411 -0.644   0.9523878981
+ 281 -1.165 -1.571 -0.541  0.344  0.411 -0.645   0.9523875416
+ 292 -1.148 -1.571 -0.541  0.344  0.411 -0.645   0.9523832138
+ 293 -1.156 -1.571 -0.541  0.344  0.411 -0.645   0.9523792850
+ 294 -1.155 -1.571 -0.541  0.344  0.411 -0.645   0.9523790733
+ 304 -1.155 -1.617 -0.541  0.344  0.411 -0.645   0.9523756055
+ 305 -1.155 -1.595 -0.541  0.344  0.411 -0.645   0.9523725005
+ 306 -1.155 -1.598 -0.541  0.344  0.411 -0.645   0.9523682692
+ 309 -1.155 -1.599 -0.541  0.344  0.411 -0.645   0.9523667155
+ 318 -1.155 -1.599 -0.526  0.344  0.411 -0.645   0.9523551261
+ 321 -1.155 -1.599 -0.528  0.344  0.411 -0.645   0.9523547224
+ 333 -1.155 -1.599 -0.528  0.343  0.411 -0.645   0.9523528821
+ 334 -1.155 -1.599 -0.528  0.334  0.411 -0.645   0.9523489831
+ 337 -1.155 -1.599 -0.528  0.330  0.411 -0.645   0.9523485265
+ 338 -1.155 -1.599 -0.528  0.331  0.411 -0.645   0.9523483929
+ 347 -1.155 -1.599 -0.528  0.331  0.483 -0.645   0.9523483315
+ 350 -1.155 -1.599 -0.528  0.331  0.528 -0.645   0.9523323474
+ 352 -1.155 -1.599 -0.528  0.331  0.511 -0.645   0.9523100751
+ 353 -1.155 -1.599 -0.528  0.331  0.508 -0.645   0.9523096432
+ 354 -1.155 -1.599 -0.528  0.331  0.507 -0.645   0.9523061084
+ 357 -1.155 -1.599 -0.528  0.331  0.506 -0.645   0.9523059034
+ 367 -1.155 -1.599 -0.528  0.331  0.505 -0.653   0.9523048472
+ 368 -1.155 -1.599 -0.528  0.331  0.505 -0.651   0.9523046737
+ 391 -1.155 -1.595 -0.528  0.331  0.505 -0.651   0.9523012584
+ 393 -1.155 -1.596 -0.528  0.331  0.505 -0.651   0.9523008395
+ 401 -1.155 -1.596 -0.476  0.331  0.505 -0.651   0.9522509357
+ 403 -1.155 -1.596 -0.493  0.331  0.505 -0.651   0.9522470874
+ 404 -1.155 -1.596 -0.488  0.331  0.505 -0.651   0.9522425545
+ 405 -1.155 -1.596 -0.486  0.331  0.505 -0.651   0.9522420892
+ 416 -1.155 -1.596 -0.485  0.308  0.505 -0.651   0.9522338774
+ 417 -1.155 -1.596 -0.485  0.312  0.505 -0.651   0.9522273894
+ 418 -1.155 -1.596 -0.485  0.318  0.505 -0.651   0.9522244607
+ 421 -1.155 -1.596 -0.485  0.319  0.505 -0.651   0.9522244215
+ 434 -1.155 -1.596 -0.485  0.319  0.504 -0.651   0.9522240982
+ 445 -1.155 -1.596 -0.485  0.319  0.504 -0.649   0.9522237806
+ 457 -1.160 -1.596 -0.485  0.319  0.504 -0.649   0.9522212130
+ 458 -1.159 -1.596 -0.485  0.319  0.504 -0.649   0.9522209578
+ 468 -1.159 -1.586 -0.485  0.319  0.504 -0.649   0.9522097151
+ 493 -1.159 -1.586 -0.485  0.314  0.504 -0.649   0.9522070455
+ 494 -1.159 -1.586 -0.485  0.311  0.504 -0.649   0.9522068655
+ 495 -1.159 -1.586 -0.485  0.312  0.504 -0.649   0.9522066526
+ 506 -1.159 -1.586 -0.485  0.312  0.506 -0.649   0.9522063543
+ 519 -1.159 -1.586 -0.485  0.312  0.506 -0.650   0.9522062585
+ 526 -1.161 -1.582 -0.485  0.309  0.506 -0.650   0.9522046976
+ 527 -1.161 -1.582 -0.485  0.309  0.506 -0.650   0.9522046120
+ 529 -1.160 -1.583 -0.485  0.310  0.506 -0.650   0.9522042984
+ 530 -1.160 -1.583 -0.485  0.310  0.506 -0.650   0.9522040334
+ 532 -1.160 -1.583 -0.485  0.310  0.506 -0.650   0.9522009075
+ 547 -1.158 -1.583 -0.485  0.310  0.506 -0.650   0.9521994398
+ 549 -1.157 -1.583 -0.485  0.310  0.506 -0.650   0.9521993660
+ 573 -1.157 -1.583 -0.483  0.310  0.506 -0.650   0.9521992104
+ 575 -1.157 -1.583 -0.484  0.310  0.506 -0.650   0.9521991401
+ 588 -1.157 -1.583 -0.484  0.309  0.506 -0.650   0.9521988707
+ 611 -1.157 -1.583 -0.484  0.309  0.506 -0.650   0.9521988614
+ 613 -1.157 -1.583 -0.484  0.309  0.506 -0.650   0.9521988576
+ 688 -1.158 -1.582 -0.483  0.308  0.506 -0.650   0.9521988110
+ 690 -1.157 -1.582 -0.483  0.308  0.506 -0.650   0.9521987530
+ 693 -1.158 -1.582 -0.483  0.308  0.506 -0.650   0.9521987327
+Powell done niters = 8
+Computing relative cost
+ 0  -25.0 -25.0 -25.0   0.985988
+ 1  -25.0 -25.0  25.0   0.998190
+ 2  -25.0  25.0 -25.0   0.991448
+ 3  -25.0  25.0  25.0   0.980796
+ 4   25.0 -25.0 -25.0   1.002555
+ 5   25.0 -25.0  25.0   0.990426
+ 6   25.0  25.0 -25.0   0.991372
+ 7   25.0  25.0  25.0   1.001090
+REL:  8  0.952199    7.941865  0.992733 rel = 0.959169 
+Number of iterations     8
+Min cost was 0.952199
+Number of FunctionCalls   770
+TolPowell 0.000000
+nMaxItersPowell 36
+OptimizationTime 67.423000 sec
+Parameters at optimum (transmm) -1.15744 -1.58228 -0.48307
+Parameters at optimum (rotdeg)  0.30803  0.50608 -0.65024 
+Final costs ----------------
+Number of surface hits 325417
+WM  Intensity  4576.7307 +/- 2254.3210
+Ctx Intensity  4538.2829 +/- 2297.7272
+Pct Contrast     -1.5524 +/-  35.1534
+Cost   0.9522
+RelCost   0.9782
+Reg at min cost was 
+ 0.998   0.007  -0.063  -2.041;
+-0.011   0.997  -0.075   1.847;
+ 0.062   0.075   0.995  -3.220;
+ 0.000   0.000   0.000   1.000;
+
+Writing optimal reg to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat, type = 14 
+Writing output volume to /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz 
+Original Reg 
+ 0.997  -0.005  -0.071  -0.899;
+ 0.000   0.998  -0.070   3.405;
+ 0.071   0.070   0.995  -2.763;
+ 0.000   0.000   0.000   1.000;
+
+Original Reg - Optimal Reg
+-0.001  -0.012  -0.008   1.143;
+ 0.012   0.000   0.005   1.557;
+ 0.009  -0.005  -0.000   0.457;
+ 0.000   0.000   0.000   0.000;
+
+Computing change in lh position
+LH rmsDiffMean 1.822154
+Computing change in rh position
+Surface RMS Diff (mm) 2.127938 3.079558
+
+
+WARNING: initial G-W contrast was negative, but expected positive.
+If the mov data has a T1 contrast, re-run with --T1
+
+
+mri_segreg done
+Cleaning up
+ 
+Started at Fri Oct 27 12:53:19 PDT 2017 
+Ended   at Fri Oct 27 12:54:48 PDT 2017
+BBR-Run-Time-Sec 89
+ 
+bbregister Done
+To check results, run:
+tkregister2 --mov /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz --reg /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat --surf
+ 
+Fri Oct 27 12:54:48 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Create FSL-style matrix and then combine with existing warp fields
+tkregister_tcl /Applications/Preprocessing/freesurfer/tktools/tkregister2.tcl
+target  volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/T1w_acpc_dc.nii.gz
+movable volume /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz
+reg file       /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/EPItoT1w.dat
+LoadVol        0
+ZeroCRAS       0
+$Id: tkregister2.c,v 1.121.2.1 2011/03/28 20:25:16 greve Exp $
+Diagnostic Level -1
+---- Input registration matrix --------
+ 0.998   0.007  -0.063  -2.041;
+-0.011   0.997  -0.075   1.847;
+ 0.062   0.075   0.995  -3.220;
+ 0.000   0.000   0.000   1.000;
+float2int = 0
+---------------------------------------
+INFO: loading target /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/T1w_acpc_dc.nii.gz
+INFO: target does not conform to COR format, so I'm going to
+reslice to COR. This will not affect the final registration.
+Ttarg: --------------------
+-1.000   0.000   0.000   128.000;
+ 0.000   0.000   1.000  -128.000;
+ 0.000  -1.000   0.000   128.000;
+ 0.000   0.000   0.000   1.000;
+INFO: loading movable /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w_init.nii.gz
+Tmov: --------------------
+-0.700   0.000   0.000   91.000;
+ 0.000   0.000   0.700  -91.000;
+ 0.000  -0.700   0.000   108.850;
+ 0.000   0.000   0.000   1.000;
+mkheaderreg = 0, float2int = 0
+---- Input registration matrix --------
+ 0.998   0.063   0.007  -2.041;
+-0.011   0.075   0.997   1.847;
+ 0.062  -0.995   0.075  -3.220;
+ 0.000   0.000   0.000   1.000;
+Determinant 1
+subject = Pilot2016
+RegMat ---------------------------
+ 0.998   0.007  -0.063  -2.041;
+-0.011   0.997  -0.075   1.847;
+ 0.062   0.075   0.995  -3.220;
+ 0.000   0.000   0.000   1.000;
+FSLOUTPUTTYPE NIFTI_GZ 
+tkreg2FSL: mov det = -0.343, ref det = -0.343
+Fri Oct 27 12:56:07 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - Create warped image with spline interpolation, bias correction and (optional) Jacobian modulation
+Fri Oct 27 12:56:35 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - not applying Jacobian modulation
+Fri Oct 27 12:56:35 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Scout_gdc_undistorted2T1w.nii.gz /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/Scout2T1w.nii.gz
+Fri Oct 27 12:56:35 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/fMRI2str.nii.gz /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/T1w/xfms/rfMRI_REST1_AP2str.nii.gz
+Fri Oct 27 12:56:35 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - cp /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased/Jacobian2T1w.nii.gz /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/Jacobian.nii.gz
+Fri Oct 27 12:56:35 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - generating QA image (sqrt of EPI * T1w)
+Fri Oct 27 12:56:38 PDT 2017 - DistortionCorrectionAndEPIToT1wReg_FLIRTBBRAndFreeSurferBBRbased.sh - END
+Fri Oct 27 12:56:38 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - One Step Resampling
+Fri Oct 27 12:56:38 PDT 2017 - GenericfMRIVolumeProcessingPipeline.sh - mkdir -p /Users/brookestaveland/Desktop/HCP_examples/Pilot2016/rfMRI_REST1_AP/OneStepResampling
+ 
+ START: OneStepResampling
