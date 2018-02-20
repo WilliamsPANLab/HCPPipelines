@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 get_batch_options() {
     local arguments=("$@")
@@ -39,9 +39,9 @@ get_batch_options() {
 
 get_batch_options "$@"
 
-StudyFolder="${HOME}/Desktop/HCP_examples" # Location of Subject folders (named by subjectID)
-Subjlist="Pilot2017"                                    # Space delimited list of subject IDs
-EnvironmentScript="/Applications/Preprocessing/Pipelines-master/Examples/Scripts/SetUpHCPPipeline_Pilot.sh" #Pipeline environment script
+StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
+Subjlist="100307"                                     # Space delimited list of subject IDs
+EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
 
 
 if [ -n "${command_line_specified_study_folder}" ]; then
@@ -72,7 +72,7 @@ PRINTCOM=""
 #QUEUE="-q veryshort.q"
 
 
-########################################## INPUTS ########################################## 
+########################################## INPUTS ##########################################
 
 #Scripts called by this script do assume they run on the outputs of the FreeSurfer Pipeline
 
@@ -117,7 +117,7 @@ for Subject in $Subjlist ; do
       --printcom=$PRINTCOM
 
   # The following lines are used for interactive debugging to set the positional parameters: $1 $2 $3 ...
-  
+
    echo "set -- --path="$StudyFolder" \
       --subject="$Subject" \
       --surfatlasdir="$SurfaceAtlasDIR" \
@@ -130,7 +130,6 @@ for Subject in $Subjlist ; do
       --refmyelinmaps="$ReferenceMyelinMaps" \
       --regname="$RegName" \
       --printcom=$PRINTCOM"
-      
+
    echo ". ${EnvironmentScript}"
 done
-

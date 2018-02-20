@@ -1,10 +1,10 @@
-#!/bin/bash 
+#!/bin/bash
 
 echo "This script must be SOURCED to correctly setup the environment prior to running any of the other HCP scripts contained here"
 
 # Set up FSL (if not already done so in the running environment)
 # Uncomment the following 2 lines (remove the leading #) and correct the FSLDIR setting for your setup
- export FSLDIR=/Applications/Preprocessing/fsl
+ export FSLDIR=/usr/local/fsl
  . ${FSLDIR}/etc/fslconf/fsl.sh
 
 # Let FreeSurfer know what version of FSL to use
@@ -17,7 +17,7 @@ export FSL_DIR="${FSLDIR}"
  source ${FREESURFER_HOME}/SetUpFreeSurfer.sh > /dev/null 2>&1
 
 # Set up specific environment variables for the HCP Pipeline
-export HCPPIPEDIR=/Applications/Preprocessing/Pipelines-master
+export HCPPIPEDIR=/Applications/Preprocessing/Pipelines
 export CARET7DIR=/Applications/Preprocessing/workbench/bin_macosx64
 export MSMBINDIR=/Applications/Preprocessing/MSM_HOCR_v2/MacOSX
 export MSMCONFIGDIR=${HCPPIPEDIR}/MSMConfig
