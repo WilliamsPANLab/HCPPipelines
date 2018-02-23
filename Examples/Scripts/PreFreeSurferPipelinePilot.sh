@@ -130,7 +130,7 @@ main()
 	Subjlist="con007"                                    # Space delimited list of subject IDs
 
 	# Set variable value that set up environment
-	EnvironmentScript="/home/tools/PanLab//Pipelines/Examples/Scripts/SetUpHCPPipelinePilot.sh" # Pipeline environment script
+	EnvironmentScript="/home/tools/PanLab//Pipelines/Examples/Scripts/SetUpHCPPipeline_Pilot.sh" # Pipeline environment script
 
 	# Use any command line specified options to override any of the variable settings above
 	if [ -n "${command_line_specified_study_folder}" ]; then
