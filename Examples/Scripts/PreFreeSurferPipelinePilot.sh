@@ -126,11 +126,11 @@ main()
 	get_batch_options "$@"
 
 	# Set variable values that locate and specify data to process
-	StudyFolder="${HOME}/Desktop/HCP_examples" # Location of Subject folders (named by subjectID)
-	Subjlist="Pilot2017"                                    # Space delimited list of subject IDs
+	StudyFolder="/data/HCP_Pilots" # Location of Subject folders (named by subjectID)
+	Subjlist="con007"                                    # Space delimited list of subject IDs
 
 	# Set variable value that set up environment
-	EnvironmentScript="/Applications/Preprocessing/Pipelines-master/Examples/Scripts/SetUpHCPPipeline_Pilot.sh" # Pipeline environment script
+	EnvironmentScript="/home/tools/PanLab//Pipelines/Examples/Scripts/SetUpHCPPipelinePilot.sh" # Pipeline environment script
 
 	# Use any command line specified options to override any of the variable settings above
 	if [ -n "${command_line_specified_study_folder}" ]; then
@@ -374,25 +374,25 @@ main()
 		# Templates
 
 		# Hires T1w MNI template
-		T1wTemplate="${HCPPIPEDIR_Templates}/MNI152_T1_0.7mm.nii.gz"
+		T1wTemplate="${HCPPIPEDIR_Templates}/MNI152_T1_0.8mm.nii.gz"
 
 		# Hires brain extracted MNI template
-		T1wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T1_0.7mm_brain.nii.gz"
+		T1wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T1_0.8mm_brain.nii.gz"
 
 		# Lowres T1w MNI template
 		T1wTemplate2mm="${HCPPIPEDIR_Templates}/MNI152_T1_2mm.nii.gz"
 
 		# Hires T2w MNI Template
-		T2wTemplate="${HCPPIPEDIR_Templates}/MNI152_T2_0.7mm.nii.gz"
+		T2wTemplate="${HCPPIPEDIR_Templates}/MNI152_T2_0.8mm.nii.gz"
 
 		# Hires T2w brain extracted MNI Template
-		T2wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T2_0.7mm_brain.nii.gz"
+		T2wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T2_0.8mm_brain.nii.gz"
 
 		# Lowres T2w MNI Template
 		T2wTemplate2mm="${HCPPIPEDIR_Templates}/MNI152_T2_2mm.nii.gz"
 
 		# Hires MNI brain mask template
-		TemplateMask="${HCPPIPEDIR_Templates}/MNI152_T1_0.7mm_brain_mask.nii.gz"
+		TemplateMask="${HCPPIPEDIR_Templates}/MNI152_T1_0.8mm_brain_mask.nii.gz"
 
 		# Lowres MNI brain mask template
 		Template2mmMask="${HCPPIPEDIR_Templates}/MNI152_T1_2mm_brain_mask_dil.nii.gz"
