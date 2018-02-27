@@ -39,8 +39,8 @@ get_batch_options() {
 
 get_batch_options "$@"
 
-StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
-Subjlist="100307"                                     # Space delimited list of subject IDs
+StudyFolder="${HOME}/Desktop/HCPpipeline/Test" # Location of Subject folders (named by subjectID)
+Subjlist="con0007"                                        # Space delimited list of subject IDs
 EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
 
 
@@ -77,8 +77,8 @@ PRINTCOM=""
 ######################################### DO WORK ##########################################
 
 Tasklist=""
-Tasklist="${Tasklist} rfMRI_REST1_RL"
-Tasklist="${Tasklist} rfMRI_REST1_LR"
+Tasklist="${Tasklist} tfMRI_EMOTION_PA"
+Tasklist="${Tasklist} tfMRI_EMOTION_AP"
 # Tasklist="${Tasklist} rfMRI_REST2_RL"
 # Tasklist="${Tasklist} rfMRI_REST2_LR"
 # Tasklist="${Tasklist} tfMRI_EMOTION_RL"
@@ -93,8 +93,8 @@ Tasklist="${Tasklist} rfMRI_REST1_LR"
 # Tasklist="${Tasklist} tfMRI_RELATIONAL_LR"
 # Tasklist="${Tasklist} tfMRI_SOCIAL_RL"
 # Tasklist="${Tasklist} tfMRI_SOCIAL_LR"
-Tasklist="${Tasklist} tfMRI_WM_RL"
-Tasklist="${Tasklist} tfMRI_WM_LR"
+Tasklist="${Tasklist} tfMRI_GAMBLING_PA"
+Tasklist="${Tasklist} tfMRI_GAMBLING_AP"
 
 for Subject in $Subjlist ; do
   echo $Subject

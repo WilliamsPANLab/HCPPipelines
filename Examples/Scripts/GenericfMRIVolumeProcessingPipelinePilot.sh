@@ -39,9 +39,10 @@ get_batch_options() {
 
 get_batch_options "$@"
 
-StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
-Subjlist="100307"                                     # Space delimited list of subject IDs
+StudyFolder="${HOME}/Desktop/HCPpipeline/Test" # Location of Subject folders (named by subjectID)
+Subjlist="con0007"                                        # Space delimited list of subject IDs
 EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
+
 
 if [ -n "${command_line_specified_study_folder}" ]; then
     StudyFolder="${command_line_specified_study_folder}"
@@ -130,11 +131,11 @@ PRINTCOM=""
 Tasklist=""
 PhaseEncodinglist=""
 
-Tasklist="${Tasklist} rfMRI_REST1_RL"
-PhaseEncodinglist="${PhaseEncodinglist} x"
+#Tasklist="${Tasklist} rfMRI_REST1_PA"
+#PhaseEncodinglist="${PhaseEncodinglist} x"
 
-Tasklist="${Tasklist} rfMRI_REST1_LR"
-PhaseEncodinglist="${PhaseEncodinglist} x-"
+#Tasklist="${Tasklist} rfMRI_REST1_AP"
+#PhaseEncodinglist="${PhaseEncodinglist} x-"
 
 #Tasklist="${Tasklist} rfMRI_REST2_RL"
 #PhaseEncodinglist="${PhaseEncodinglist} x"
@@ -142,17 +143,17 @@ PhaseEncodinglist="${PhaseEncodinglist} x-"
 #Tasklist="${Tasklist} rfMRI_REST2_LR"
 #PhaseEncodinglist="${PhaseEncodinglist} x-"
 #
-#Tasklist="${Tasklist} tfMRI_EMOTION_RL"
-#PhaseEncodinglist="${PhaseEncodinglist} x"
+Tasklist="${Tasklist} tfMRI_EMOTION_PA"
+PhaseEncodinglist="${PhaseEncodinglist} x"
 #
-#Tasklist="${Tasklist} tfMRI_EMOTION_LR"
-#PhaseEncodinglist="${PhaseEncodinglist} x-"
+Tasklist="${Tasklist} tfMRI_EMOTION_AP"
+PhaseEncodinglist="${PhaseEncodinglist} x-"
 #
-#Tasklist="${Tasklist} tfMRI_GAMBLING_RL"
-#PhaseEncodinglist="${PhaseEncodinglist} x"
+Tasklist="${Tasklist} tfMRI_GAMBLING_PA"
+PhaseEncodinglist="${PhaseEncodinglist} x"
 #
-#Tasklist="${Tasklist} tfMRI_GAMBLING_LR"
-#PhaseEncodinglist="${PhaseEncodinglist} x-"
+Tasklist="${Tasklist} tfMRI_GAMBLING_AP"
+PhaseEncodinglist="${PhaseEncodinglist} x-"
 #
 #Tasklist="${Tasklist} tfMRI_LANGUAGE_RL"
 #PhaseEncodinglist="${PhaseEncodinglist} x"
@@ -178,11 +179,11 @@ PhaseEncodinglist="${PhaseEncodinglist} x-"
 #Tasklist="${Tasklist} tfMRI_SOCIAL_LR"
 #PhaseEncodinglist="${PhaseEncodinglist} x-"
 #
-Tasklist="${Tasklist} tfMRI_WM_RL"
-PhaseEncodinglist="${PhaseEncodinglist} x"
+#Tasklist="${Tasklist} tfMRI_WM_RL"
+#PhaseEncodinglist="${PhaseEncodinglist} x"
 #
-Tasklist="${Tasklist} tfMRI_WM_LR"
-PhaseEncodinglist="${PhaseEncodinglist} x-"
+#Tasklist="${Tasklist} tfMRI_WM_LR"
+#PhaseEncodinglist="${PhaseEncodinglist} x-"
 
 # Verify that Tasklist and PhaseEncodinglist have the same number of elements
 TaskArray=($Tasklist)
@@ -207,11 +208,11 @@ for Subject in $Subjlist ; do
     UnwarpDir=`echo $PhaseEncodinglist | cut -d " " -f $i`
     fMRITimeSeries="${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/${Subject}_3T_${fMRIName}.nii.gz"
     fMRISBRef="${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/${Subject}_3T_${fMRIName}_SBRef.nii.gz" #A single band reference image (SBRef) is recommended if using multiband, set to NONE if you want to use the first volume of the timeseries for motion correction
-    DwellTime= "0.00058" # ".001600" For Panlab  #Echo Spacing or Dwelltime of fMRI image, set to NONE if not used. Dwelltime = 1/(BandwidthPerPixelPhaseEncode * # of phase encoding samples): DICOM field (0019,1028) = BandwidthPerPixelPhaseEncode, DICOM field (0051,100b) AcquisitionMatrixText first value (# of phase encoding samples).  On Siemens, iPAT/GRAPPA factors have already been accounted for.
+    DwellTime=".001600" # ".001600" For Panlab  #Echo Spacing or Dwelltime of fMRI image, set to NONE if not used. Dwelltime = 1/(BandwidthPerPixelPhaseEncode * # of phase encoding samples): DICOM field (0019,1028) = BandwidthPerPixelPhaseEncode, DICOM field (0051,100b) AcquisitionMatrixText first value (# of phase encoding samples).  On Siemens, iPAT/GRAPPA factors have already been accounted for.
     DistortionCorrection="TOPUP" # FIELDMAP, SiemensFieldMap, GeneralElectricFieldMap, or TOPUP: distortion correction is required for accurate processing
     BiasCorrection="NONE" #NONE, LEGACY, or SEBASED: LEGACY uses the T1w bias field, SEBASED calculates bias field from spin echo images (which requires TOPUP distortion correction)
-    SpinEchoPhaseEncodeNegative="${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/${Subject}_3T_SpinEchoFieldMap_LR.nii.gz" #For the spin echo field map volume with a negative phase encoding direction (LR in HCP data, AP in 7T HCP data), set to NONE if using regular FIELDMAP
-    SpinEchoPhaseEncodePositive="${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/${Subject}_3T_SpinEchoFieldMap_RL.nii.gz" #For the spin echo field map volume with a positive phase encoding direction (RL in HCP data, PA in 7T HCP data), set to NONE if using regular FIELDMAP
+    SpinEchoPhaseEncodeNegative="${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/${Subject}_3T_SpinEchoFieldMap_PA.nii.gz" #For the spin echo field map volume with a negative phase encoding direction (LR in HCP data, AP in 7T HCP data), set to NONE if using regular FIELDMAP
+    SpinEchoPhaseEncodePositive="${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/${Subject}_3T_SpinEchoFieldMap_AP.nii.gz" #For the spin echo field map volume with a positive phase encoding direction (RL in HCP data, PA in 7T HCP data), set to NONE if using regular FIELDMAP
     MagnitudeInputName="NONE" #Expects 4D Magnitude volume with two 3D timepoints, set to NONE if using TOPUP
     PhaseInputName="NONE" #Expects a 3D Phase volume, set to NONE if using TOPUP
 
