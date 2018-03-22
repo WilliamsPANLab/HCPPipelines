@@ -40,9 +40,8 @@ get_batch_options() {
 get_batch_options "$@"
 
 StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
-Subjlist="CONN009 CONN010 CONN011"                                    # Space delimited list of subject IDs
+Subjlist="CONN009 CONN010 CONN011"                                      # Space delimited list of subject IDs
 EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
-
 
 if [ -n "${command_line_specified_study_folder}" ]; then
     StudyFolder="${command_line_specified_study_folder}"
@@ -74,62 +73,45 @@ PRINTCOM=""
 
 ########################################## INPUTS ##########################################
 
-#Scripts called by this script do assume they run on the outputs of the FreeSurfer Pipeline
+#Scripts called by this script do assume they run on the outputs of the PreFreeSurfer Pipeline
 
 ######################################### DO WORK ##########################################
-
 
 for Subject in $Subjlist ; do
   echo $Subject
 
   #Input Variables
-  SurfaceAtlasDIR="${HCPPIPEDIR_Templates}/standard_mesh_atlases"
-  GrayordinatesSpaceDIR="${HCPPIPEDIR_Templates}/91282_Greyordinates"
-  GrayordinatesResolutions="2" #Usually 2mm, if multiple delimit with @, must already exist in templates dir
-  HighResMesh="164" #Usually 164k vertices
-  LowResMeshes="32" #Usually 32k vertices, if multiple delimit with @, must already exist in templates dir
-  SubcorticalGrayLabels="${HCPPIPEDIR_Config}/FreeSurferSubcorticalLabelTableLut.txt"
-  FreeSurferLabels="${HCPPIPEDIR_Config}/FreeSurferAllLut.txt"
-  ReferenceMyelinMaps="${HCPPIPEDIR_Templates}/standard_mesh_atlases/Conte69.MyelinMap_BC.164k_fs_LR.dscalar.nii"
-  RegName="MSMSulc" #MSMSulc is recommended, if binary is not available use FS (FreeSurfer)
-  # RegName="FS"
+  SubjectID="$Subject" #FreeSurfer Subject ID Name
+  SubjectDIR="${StudyFolder}/${Subject}/T1w" #Location to Put FreeSurfer Subject's Folder
+  T1wImage="${StudyFolder}/${Subject}/T1w/T1w_acpc_dc_restore.nii.gz" #T1w FreeSurfer Input (Full Resolution)
+  T1wImageBrain="${StudyFolder}/${Subject}/T1w/T1w_acpc_dc_restore_brain.nii.gz" #T1w FreeSurfer Input (Full Resolution)
+  T2wImage="${StudyFolder}/${Subject}/T1w/T2w_acpc_dc_restore.nii.gz" #T2w FreeSurfer Input (Full Resolution)
 
   if [ -n "${command_line_specified_run_local}" ] ; then
-      echo "About to run ${HCPPIPEDIR}/PostFreeSurfer/PostFreeSurferPipeline.sh"
+      echo "About to run ${HCPPIPEDIR}/FreeSurfer/FreeSurferPipeline.sh"
       queuing_command=""
   else
-      echo "About to use fsl_sub to queue or run ${HCPPIPEDIR}/PostFreeSurfer/PostFreeSurferPipeline.sh"
+      echo "About to use fsl_sub to queue or run ${HCPPIPEDIR}/FreeSurfer/FreeSurferPipeline.sh"
       queuing_command="${FSLDIR}/bin/fsl_sub ${QUEUE}"
   fi
 
-  ${queuing_command} ${HCPPIPEDIR}/PostFreeSurfer/PostFreeSurferPipeline.sh \
-      --path="$StudyFolder" \
+  ${queuing_command} ${HCPPIPEDIR}/FreeSurfer/FreeSurferPipeline.sh \
       --subject="$Subject" \
-      --surfatlasdir="$SurfaceAtlasDIR" \
-      --grayordinatesdir="$GrayordinatesSpaceDIR" \
-      --grayordinatesres="$GrayordinatesResolutions" \
-      --hiresmesh="$HighResMesh" \
-      --lowresmesh="$LowResMeshes" \
-      --subcortgraylabels="$SubcorticalGrayLabels" \
-      --freesurferlabels="$FreeSurferLabels" \
-      --refmyelinmaps="$ReferenceMyelinMaps" \
-      --regname="$RegName" \
+      --subjectDIR="$SubjectDIR" \
+      --t1="$T1wImage" \
+      --t1brain="$T1wImageBrain" \
+      --t2="$T2wImage" \
       --printcom=$PRINTCOM
 
   # The following lines are used for interactive debugging to set the positional parameters: $1 $2 $3 ...
 
-   echo "set -- --path="$StudyFolder" \
-      --subject="$Subject" \
-      --surfatlasdir="$SurfaceAtlasDIR" \
-      --grayordinatesdir="$GrayordinatesSpaceDIR" \
-      --grayordinatesres="$GrayordinatesResolutions" \
-      --hiresmesh="$HighResMesh" \
-      --lowresmesh="$LowResMeshes" \
-      --subcortgraylabels="$SubcorticalGrayLabels" \
-      --freesurferlabels="$FreeSurferLabels" \
-      --refmyelinmaps="$ReferenceMyelinMaps" \
-      --regname="$RegName" \
+  echo "set -- --subject="$Subject" \
+      --subjectDIR="$SubjectDIR" \
+      --t1="$T1wImage" \
+      --t1brain="$T1wImageBrain" \
+      --t2="$T2wImage" \
       --printcom=$PRINTCOM"
 
-   echo ". ${EnvironmentScript}"
+  echo ". ${EnvironmentScript}"
+
 done
