@@ -40,7 +40,7 @@ get_batch_options() {
 get_batch_options "$@"
 
 StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
-Subjlist="CONN009 CONN010 CONN011"                                      # Space delimited list of subject IDs
+Subjlist="CONN009 CONN011"                                      # Space delimited list of subject IDs
 EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
 
 if [ -n "${command_line_specified_study_folder}" ]; then
@@ -182,8 +182,6 @@ for Subject in $Subjlist ; do
     echo "  ${fMRIName}"
     UnwarpDir=`echo $PhaseEncodinglist | cut -d " " -f $i`
     fMRITimeSeries="${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/${Subject}_3T_${fMRIName}.nii.gz"
-    #Cut SBref and Spin Echo
-
     fMRISBRef="${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/${Subject}_3T_${fMRIName}_SBRef.nii.gz" #A single band reference image (SBRef) is recommended if using multiband, set to NONE if you want to use the first volume of the timeseries for motion correction
     DwellTime=".001600" # ".001600" For Panlab  #Echo Spacing or Dwelltime of fMRI image, set to NONE if not used. Dwelltime = 1/(BandwidthPerPixelPhaseEncode * # of phase encoding samples): DICOM field (0019,1028) = BandwidthPerPixelPhaseEncode, DICOM field (0051,100b) AcquisitionMatrixText first value (# of phase encoding samples).  On Siemens, iPAT/GRAPPA factors have already been accounted for.
     DistortionCorrection="TOPUP" # FIELDMAP, SiemensFieldMap, GeneralElectricFieldMap, or TOPUP: distortion correction is required for accurate processing
@@ -207,7 +205,20 @@ for Subject in $Subjlist ; do
     # GradientDistortionCoeffs="${HCPPIPEDIR_Config}/coeff_SC72C_Skyra.grad" #Gradient distortion correction coefficents, set to NONE to turn off
     GradientDistortionCoeffs="NONE" # Set to NONE to skip gradient distortion correction
     TopUpConfig="${HCPPIPEDIR_Config}/b02b0.cnf" #Topup config if using TOPUP, set to NONE if using regular FIELDMAP
-
+    #Cut Volumes
+    fslsplit ${fMRISBRef} ${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/sbref
+    mv ${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/sbref0003.nii.gz ${fMRISBRef}
+    fslsplit ${SpinEchoPhaseEncodeNegative} ${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/neg
+    mv ${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/neg0003.nii.gz ${SpinEchoPhaseEncodeNegative}
+    fslsplit ${SpinEchoPhaseEncodePositive} ${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/pos
+    mv ${StudyFolder}/${Subject}/unprocessed/3T/${fMRIName}/pos0003.nii.gz ${SpinEchoPhaseEncodePositive}
+    #Swapdims
+    ${FSLDIR}/bin/fslswapdim ${fMRITimeSeries} LR AP SI ${fMRITimeSeries}
+    ${FSLDIR}/bin/fslswapdim ${fMRISBRef} LR AP SI ${fMRISBRef}
+    ${FSLDIR}/bin/fslswapdim ${SpinEchoPhaseEncodeNegative} LR AP SI ${SpinEchoPhaseEncodeNegative}
+    ${FSLDIR}/bin/fslswapdim ${SpinEchoPhaseEncodePositive} LR AP SI ${SpinEchoPhaseEncodePositive}
+    #Cut first two Volumes
+    fslroi ${fMRITimeSeries} ${fMRITimeSeries} 2 500 #500 is above max time of scan for all tasks
     # Use mcflirt motion correction
     MCType="MCFLIRT"
 

@@ -40,7 +40,7 @@ get_batch_options() {
 get_batch_options "$@"
 
 StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
-Subjlist="CONN009 CONN011"                                      # Space delimited list of subject IDs
+Subjlist="CONN010"                                      # Space delimited list of subject IDs
 EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
 
 
@@ -83,8 +83,8 @@ Tasklist="${Tasklist} rfMRI_REST2_PA"
 Tasklist="${Tasklist} rfMRI_REST2_AP"
 Tasklist="${Tasklist} tfMRI_EMOTION_PA"
 Tasklist="${Tasklist} tfMRI_EMOTION_AP"
-Tasklist="${Tasklist} tfMRI_GAMBLING_PA"
-Tasklist="${Tasklist} tfMRI_GAMBLING_AP"
+# Tasklist="${Tasklist} tfMRI_GAMBLING_PA"
+# Tasklist="${Tasklist} tfMRI_GAMBLING_AP"
 Tasklist="${Tasklist} tfMRI_WM_PA"
 Tasklist="${Tasklist} tfMRI_WM_AP"
 
