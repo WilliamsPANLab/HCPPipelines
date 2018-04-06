@@ -39,8 +39,8 @@ get_batch_options() {
 
 get_batch_options "$@"
 
-StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
-Subjlist="100307"                                     # Space delimited list of subject IDs
+StudyFolder="${HOME}/Desktop/HCPpipeline/Test" # Location of Subject folders (named by subjectID)
+Subjlist="con0007"                                        # Space delimited list of subject IDs
 EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
 
 
