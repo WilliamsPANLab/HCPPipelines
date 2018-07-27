@@ -1,0 +1,7 @@
+{
+    "TaskName": "Rest",
+    "PhaseEncodingDirection": "j",
+    "RepetitionTime": 0.71,
+    "EchoTime": 0.0555,
+    "FlipAngle": 90.0
+}
