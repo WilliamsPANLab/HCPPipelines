@@ -1,4 +1,4 @@
-# Script looks for subject with ID given as argument in the current directory
+# Script looks for subject with ID given as argument in the current directory. It goes through all the sessions, but skips fMRI data from sessions without a fieldmap (it is required for preprocessing)
 
 origdir=$PWD
 mkdir $1_hcp
