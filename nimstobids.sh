@@ -1,9 +1,11 @@
+# This script takes in a subject ID and creates a BIDS dataset. It looks for the sessions in NIMS format in the current directory. For now the path of the folder containing the template jsons is copypasted in the code, it will need to be changed to a variable.
+
 origdir=$PWD
 mkdir sub-$1
 
 echo "Runnning subject $1"
 
-for session in 1 2 3 4
+for session in 1 2 3 4 # usually no more than 4 sessions
 do
 cd "$origdir"
 if [ -d "$1_p${session}" ]
