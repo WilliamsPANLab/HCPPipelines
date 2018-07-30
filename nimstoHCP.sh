@@ -54,7 +54,7 @@ then
   cd "$(find . -name *DTI_pe0_g81 -type d)"
   cp *.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.nii.gz
   echo $bvals81>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.bval
-  printf $bvecs81>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.bvec
+  echo -e $bvecs81>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.bvec
   echo "Cutting first two calibration volumes"
   fslroi $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.nii.gz 2 -1
   cd ..
@@ -66,7 +66,7 @@ then
   cd "$(find . -name *DTI_pe0_g79 -type d)"
   cp *.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.nii.gz
   echo $bvals79>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.bval
-  printf $bvecs79>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.bvec
+  echo -e $bvecs79>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.bvec
   echo "Cutting first two calibration volumes"
   fslroi $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.nii.gz 2 -1
   cd ..
@@ -78,7 +78,7 @@ then
   cd "$(find . -name *DTI_pe1_g81 -type d)"
   cp *.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.nii.gz
   echo $bvals81>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.bval
-  printf $bvecs81>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.bvec
+  echo -e $bvecs81>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.bvec
   echo "Cutting first two calibration volumes"
   fslroi $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.nii.gz 2 -1
   cd ..
@@ -90,7 +90,7 @@ then
   cd "$(find . -name *DTI_pe0_g79 -type d)"
   cp *.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.nii.gz
   echo $bvals79>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.bval
-  printf $bvecs79>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.bvec
+  echo -e $bvecs79>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.bvec
   echo "Cutting first two calibration volumes"
   fslroi $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.nii.gz 2 -1
   cd ..
