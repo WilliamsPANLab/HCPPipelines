@@ -126,7 +126,7 @@ then
   row0=${myArray[0]}
   row1=${myArray[1]}
   row2=${myArray[2]}
-  echo -e ${row0[@]: -79}"\n"${row1[@]: -79}"\n"${row2[@]: -79}>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.bvec  
+  echo -e ${row0[@]: -79}"\n"${row1[@]: -79}"\n"${row2[@]: -79}>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.bvec  
 
   echo "Cutting first two calibration volumes"
   fslroi $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.nii.gz 2 -1
