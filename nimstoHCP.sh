@@ -48,11 +48,10 @@ then
   cp *.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.nii.gz
   
   # Reading bvals and bvecs, discarding the ones from calibration volumes. 
-  index=0; while read line; do myArray[index]="$line"; ((index++)); done<*.bval
-  row0=${myArray[0]}
-  row1=${myArray[1]}
-  row2=${myArray[2]}
-  echo -e ${row0[@]: -81}"\n"${row1[@]: -81}"\n"${row2[@]: -81}>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.bval
+  bvals=`cat *bval`  
+  bvals="${bvals//.0}" #FSL doesn't accept decimals
+  arr=($bvals)
+  echo "${arr[@]: -81}">$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_PA.bval
   
   index=0; while read line; do myArray[index]="$line"; ((index++)); done<*.bvec
   row0=${myArray[0]}
@@ -72,11 +71,10 @@ then
   cp *.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.nii.gz
   
   # Reading bvals and bvecs, discarding the ones from calibration volumes. 
-  index=0; while read line; do myArray[index]="$line"; ((index++)); done<*.bval
-  row0=${myArray[0]}
-  row1=${myArray[1]}
-  row2=${myArray[2]}
-  echo -e ${row0[@]: -79}"\n"${row1[@]: -79}"\n"${row2[@]: -79}>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.bval
+  bvals=`cat *bval`  
+  bvals="${bvals//.0}" #FSL doesn't accept decimals
+  arr=($bvals)
+  echo "${arr[@]: -79}">$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_PA.bval
   
   index=0; while read line; do myArray[index]="$line"; ((index++)); done<*.bvec
   row0=${myArray[0]}
@@ -96,11 +94,10 @@ then
   cp *.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.nii.gz
 
   # Reading bvals and bvecs, discarding the ones from calibration volumes. 
-  index=0; while read line; do myArray[index]="$line"; ((index++)); done<*.bval
-  row0=${myArray[0]}
-  row1=${myArray[1]}
-  row2=${myArray[2]}
-  echo -e ${row0[@]: -81}"\n"${row1[@]: -81}"\n"${row2[@]: -81}>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.bval
+  bvals=`cat *bval`  
+  bvals="${bvals//.0}" #FSL doesn't accept decimals
+  arr=($bvals)
+  echo "${arr[@]: -81}">>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir81_AP.bval
   
   index=0; while read line; do myArray[index]="$line"; ((index++)); done<*.bvec
   row0=${myArray[0]}
@@ -120,11 +117,10 @@ then
   cp *.nii.gz $origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.nii.gz
 
   # Reading bvals and bvecs, discarding the ones from calibration volumes. 
-  index=0; while read line; do myArray[index]="$line"; ((index++)); done<*.bval
-  row0=${myArray[0]}
-  row1=${myArray[1]}
-  row2=${myArray[2]}
-  echo -e ${row0[@]: -79}"\n"${row1[@]: -79}"\n"${row2[@]: -79}>$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.bval
+  bvals=`cat *bval`  
+  bvals="${bvals//.0}" #FSL doesn't accept decimals
+  arr=($bvals)
+  echo "${arr[@]: -79}">$origdir/$1_hcp/unprocessed/3T/Diffusion/$1_3T_DWI_dir79_AP.bval
   
   index=0; while read line; do myArray[index]="$line"; ((index++)); done<*.bvec
   row0=${myArray[0]}
