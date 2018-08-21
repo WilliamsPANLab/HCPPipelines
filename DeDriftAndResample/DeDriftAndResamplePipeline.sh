@@ -299,7 +299,7 @@ get_options()
 		log_Msg "highpass value: ${p_HighPass}"
 	fi
 
-	if [ -z "{p_MyelineTargetFile}" ]; then
+	if [ -z "${p_MyelinTargetFile}" ]; then
 		log_Err "Myelin Target File (--myelin-target-file=) required"
 		error_count=$(( error_count + 1 ))
 	else
@@ -773,9 +773,12 @@ main()
 
 	# ReApply FIX Cleanup
 	log_Msg "ReApply FIX Cleanup"
+	log_Msg "rfMRINames: ${rfMRINames}"
 	for fMRIName in ${rfMRINames} ; do
 		log_Msg "fMRIName: ${fMRIName}"
-		${HCPPIPEDIR}/ReApplyFix/ReApplyFixPipeline.sh --path=${StudyFolder} --subject=${Subject} --fmri-name=${fMRIName} --high-pass=${HighPass} --reg-name=${ConcatRegName} --matlab-run-mode=${MatlabRunMode}
+		reapply_fix_cmd="${HCPPIPEDIR}/ReApplyFix/ReApplyFixPipeline.sh --path=${StudyFolder} --subject=${Subject} --fmri-name=${fMRIName} --high-pass=${HighPass} --reg-name=${ConcatRegName} --matlab-run-mode=${MatlabRunMode}"
+		log_Msg "reapply_fix_cmd: ${reapply_fix_cmd}"
+		${reapply_fix_cmd}
 	done
 	
 	log_Msg "Completing main functionality"

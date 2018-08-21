@@ -39,9 +39,9 @@ get_batch_options() {
 
 get_batch_options "$@"
 
-StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
-Subjlist="CONN009 CONN010 CONN011"                                      # Space delimited list of subject IDs
-EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
+StudyFolder="${SCRATCH}/HCP_HCPformat" # Location of Subject folders (named by subjectID)
+Subjlist="100307" # Space delimited list of subject IDs
+EnvironmentScript="$PI_HOME/ltozzi/HCPPipeline_3.27.0_sherlock/Examples/Scripts/SetUpHCPPipeline.sh" #Pipeline environment script
 
 if [ -n "${command_line_specified_study_folder}" ]; then
     StudyFolder="${command_line_specified_study_folder}"

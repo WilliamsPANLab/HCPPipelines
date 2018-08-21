@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 get_batch_options() {
     local arguments=("$@")
@@ -39,9 +39,9 @@ get_batch_options() {
 
 get_batch_options "$@"
 
-StudyFolder="${HOME}/projects/Pipelines_ExampleData" #Location of Subject folders (named by subjectID)
-Subjlist="100307" #Space delimited list of subject IDs
-EnvironmentScript="${HOME}/projects/Pipelines/Examples/Scripts/SetUpHCPPipeline.sh" #Pipeline environment script
+StudyFolder="${SCRATCH}/HCP_HCPformat" #Location of Subject folders (named by subjectID)
+Subjlist="conn024" #Space delimited list of subject IDs
+EnvironmentScript="/home/groups/leanew1/ltozzi/HCPPipeline_3.27.0_sherlock/Examples/Scripts/SetUpHCPPipeline.sh" #Pipeline environment script
 
 if [ -n "${command_line_specified_study_folder}" ]; then
     StudyFolder="${command_line_specified_study_folder}"
@@ -70,7 +70,7 @@ echo "$@"
 PRINTCOM=""
 
 
-########################################## INPUTS ########################################## 
+########################################## INPUTS ##########################################
 
 #Scripts called by this script do assume they run on the outputs of the PreFreeSurfer Pipeline,
 #which is a prerequisite for this pipeline
@@ -101,29 +101,48 @@ for Subject in $Subjlist ; do
   SubjectID="$Subject" #Subject ID Name
   RawDataDir="$StudyFolder/$SubjectID/unprocessed/3T/Diffusion" #Folder where unprocessed diffusion data are
 
-  # PosData is a list of files (separated by ‘@‘ symbol) having the same phase encoding (PE) direction 
+  # PosData is a list of files (separated by ‘@‘ symbol) having the same phase encoding (PE) direction
   # and polarity. Similarly for NegData, which must have the opposite PE polarity of PosData.
   # The PosData files will come first in the merged data file that forms the input to ‘eddy’.
-  # The particular PE polarity assigned to PosData/NegData is not relevant; the distortion and eddy 
+  # The particular PE polarity assigned to PosData/NegData is not relevant; the distortion and eddy
   # current correction will be accurate either way.
+  #
+  # NOTE that PosData defines the reference space in 'topup' and 'eddy' AND it is assumed that
+  # each scan series begins with a b=0 acquisition, so that the reference space in both
+  # 'topup' and 'eddy' will be defined by the same (initial b=0) volume.
+  #
+  # On Siemens scanners, we typically use 'R>>L' ("RL") as the 'positive' direction for left-right
+  # PE data, and 'P>>A' ("PA") as the 'positive' direction for anterior-posterior PE data.
+  # And conversely, "LR" and "AP" are then the 'negative' direction data.
+  # However, see preceding comment that PosData defines the reference space; so if you want the
+  # first temporally acquired volume to define the reference space, then that series needs to be
+  # the first listed series in PosData.
   #
   # Note that only volumes (gradient directions) that have matched Pos/Neg pairs are ultimately
   # propagated to the final output, *and* these pairs will be averaged to yield a single
   # volume per pair. This reduces file size by 2x (and thence speeds subsequent processing) and
   # avoids having volumes with different SNR features/ residual distortions.
-  #
-  # [This behavior can be changed through the hard-coded 'CombineDataFlag' variable in the 
+  # [This behavior can be changed through the hard-coded 'CombineDataFlag' variable in the
   # DiffPreprocPipeline_PostEddy.sh script if necessary].
-  PosData="${RawDataDir}/${SubjectID}_3T_DWI_dir95_RL.nii.gz@${RawDataDir}/${SubjectID}_3T_DWI_dir96_RL.nii.gz@${RawDataDir}/${SubjectID}_3T_DWI_dir97_RL.nii.gz"
-  NegData="${RawDataDir}/${SubjectID}_3T_DWI_dir95_LR.nii.gz@${RawDataDir}/${SubjectID}_3T_DWI_dir96_LR.nii.gz@${RawDataDir}/${SubjectID}_3T_DWI_dir97_LR.nii.gz"
 
-  #Scan Setings
-  EchoSpacing=0.78 #Echo Spacing or Dwelltime of dMRI image, set to NONE if not used. Dwelltime = 1/(BandwidthPerPixelPhaseEncode * # of phase encoding samples): DICOM field (0019,1028) = BandwidthPerPixelPhaseEncode, DICOM field (0051,100b) AcquisitionMatrixText first value (# of phase encoding samples).  On Siemens, iPAT/GRAPPA factors have already been accounted for.
-  PEdir=1 #Use 1 for Left-Right Phase Encoding, 2 for Anterior-Posterior
+  PosData="${RawDataDir}/${SubjectID}_3T_DWI_dir79_PA.nii.gz@${RawDataDir}/${SubjectID}_3T_DWI_dir81_PA.nii.gz"
+  NegData="${RawDataDir}/${SubjectID}_3T_DWI_dir79_AP.nii.gz@${RawDataDir}/${SubjectID}_3T_DWI_dir81_AP.nii.gz"
 
-  #Config Settings
-  # Gdcoeffs="${HCPPIPEDIR_Config}/coeff_SC72C_Skyra.grad" #Coefficients that describe spatial variations of the scanner gradients. Use NONE if not available.
-  Gdcoeffs="NONE" # Set to NONE to skip gradient distortion correction
+  # "Effective" Echo Spacing of dMRI image (specified in *msec* for the dMRI processing)
+  # EchoSpacing = 1/(BWPPPE * ReconMatrixPE)
+  #   where BWPPPE is the "BandwidthPerPixelPhaseEncode" = DICOM field (0019,1028) for Siemens, and
+  #   ReconMatrixPE = size of the reconstructed image in the PE dimension
+  # In-plane acceleration, phase oversampling, phase resolution, phase field-of-view, and interpolation
+  # all potentially need to be accounted for (which they are in Siemen's reported BWPPPE)
+  EchoSpacing=0.808
+
+  PEdir=2 #Use 1 for Left-Right Phase Encoding, 2 for Anterior-Posterior
+
+  # Gradient distortion correction
+  # Set to NONE to skip gradient distortion correction
+  # (These files are considered proprietary and therefore not provided as part of the HCP Pipelines -- contact Siemens to obtain)
+  # Gdcoeffs="${HCPPIPEDIR_Config}/coeff_SC72C_Skyra.grad"
+  Gdcoeffs="NONE"
 
   if [ -n "${command_line_specified_run_local}" ] ; then
       echo "About to run ${HCPPIPEDIR}/DiffusionPreprocessing/DiffPreprocPipeline.sh"
@@ -141,4 +160,3 @@ for Subject in $Subjlist ; do
       --printcom=$PRINTCOM
 
 done
-

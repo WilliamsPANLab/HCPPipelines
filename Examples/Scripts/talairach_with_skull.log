@@ -4,6 +4,112 @@ aligning input volume to GCA.
 dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
+011: rms = 4.105
+012: rms = 4.105
+013: rms = 4.104
+014: rms = 4.104
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+011: rms = 4.105
+012: rms = 4.105
+013: rms = 4.104
+014: rms = 4.104
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+010: rms = 4.182
+011: rms = 4.177
+012: rms = 4.171
+013: rms = 4.169
+014: rms = 4.149
+015: rms = 4.140
+016: rms = 4.140
+017: rms = 4.140
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+010: rms = 4.272
+011: rms = 4.270
+012: rms = 4.270
+013: rms = 4.270
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+013: rms = 4.319
+014: rms = 4.319
+015: rms = 4.319
+016: rms = 4.305
+017: rms = 4.294
+018: rms = 4.291
+019: rms = 4.289
+020: rms = 4.288
 dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
@@ -58,6 +164,17 @@ aligning input volume to GCA.
 dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+013: rms = 4.256
 dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
@@ -76,25 +193,97 @@ aligning input volume to GCA.
 dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
-<<<<<<< HEAD
 dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
 dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
-014: rms = 4.009
-015: rms = 4.005
-016: rms = 4.005
-017: rms = 4.003
-018: rms = 4.003
-019: rms = 4.002
-020: rms = 4.002
 dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
 dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
-=======
->>>>>>> 405c3f4369f0278384fef0b6e0af3f369cf68b44
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+011: rms = 4.269
+012: rms = 4.269
+013: rms = 4.269
+014: rms = 4.269
+015: rms = 4.269
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+013: rms = 4.114
+014: rms = 4.114
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+012: rms = 4.193
+013: rms = 4.193
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+010: rms = 4.189
+011: rms = 4.185
+012: rms = 4.185
+013: rms = 4.185
+014: rms = 4.166
+015: rms = 4.166
+016: rms = 4.166
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.

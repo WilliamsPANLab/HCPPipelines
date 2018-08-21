@@ -1,0 +1,25 @@
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: Parsing Command Line Options
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: Path: /scratch/users/ltozzi/HCP_HCPformat
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: Subject: conn024
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: NameOffMRI: rfMRI_REST1_AP
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: fMRITimeSeries: /scratch/users/ltozzi/HCP_HCPformat/conn024/unprocessed/3T/rfMRI_REST1_AP/conn024_3T_rfMRI_REST1_AP.nii.gz
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: fMRIScout: /scratch/users/ltozzi/HCP_HCPformat/conn024/unprocessed/3T/rfMRI_REST1_AP/conn024_3T_rfMRI_REST1_AP_SBRef.nii.gz
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: SpinEchoPhaseEncodeNegative: /scratch/users/ltozzi/HCP_HCPformat/conn024/unprocessed/3T/rfMRI_REST1_AP/conn024_3T_SpinEchoFieldMap_AP.nii.gz
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: SpinEchoPhaseEncodePositive: /scratch/users/ltozzi/HCP_HCPformat/conn024/unprocessed/3T/rfMRI_REST1_AP/conn024_3T_SpinEchoFieldMap_PA.nii.gz
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: MagnitudeInputName: NONE
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: PhaseInputName: NONE
+Wed Jul 25 14:41:11 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: GEB0InputName: NONE
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: EchoSpacing: 0.00054
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: deltaTE: NONE
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: UnwarpDir: y-
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: FinalfMRIResolution: 2
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: DistortionCorrection: TOPUP
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: BiasCorrection: SEBASED
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: GradientDistortionCoeffs: NONE
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: TopupConfig: /home/groups/leanew1/ltozzi/HCPPipeline_3.27.0_sherlock/global/config/b02b0.cnf
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: dof: 6
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: RUN: 
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: UseJacobian: 
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: JacobianDefault: true
+Wed Jul 25 14:41:12 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: After taking default value if necessary, UseJacobian: true
+Wed Jul 25 14:41:13 PDT 2018 - GenericfMRIVolumeProcessingPipeline.sh: mkdir /scratch/users/ltozzi/HCP_HCPformat/conn024/rfMRI_REST1_AP

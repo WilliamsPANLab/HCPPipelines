@@ -422,17 +422,17 @@ main()
 	# the user requested use of the GPU-enabled version of eddy
 	# and whether the requested version of eddy can be found.
 
-	if [ "${useGpuVersion}" = "True" ]; then
-		log_Msg "User requested GPU-enabled version of eddy"
-		if [ -e ${gpuEnabledEddy} ]; then
-			log_Msg "GPU-enabled version of eddy found: ${gpuEnabledEddy}"
-			eddyExec="${gpuEnabledEddy}"
-		else
-			log_Msg "GPU-enabled version of eddy NOT found: ${gpuEnabledEddy}"
-			log_Msg "ABORTING"
-			exit 1
-		fi
-	else
+#	if [ "${useGpuVersion}" = "True" ]; then
+#		log_Msg "User requested GPU-enabled version of eddy"
+#		if [ -e ${gpuEnabledEddy} ]; then
+#			log_Msg "GPU-enabled version of eddy found: ${gpuEnabledEddy}"
+#			eddyExec="${gpuEnabledEddy}"
+#		else
+#			log_Msg "GPU-enabled version of eddy NOT found: ${gpuEnabledEddy}"
+#			log_Msg "ABORTING"
+#			exit 1
+#		fi
+#	else
 		log_Msg "User did not request GPU-enabled version of eddy"
 		if [ -e ${stdEddy} ]; then
 			log_Msg "Non-GPU-enabled version of eddy found: ${stdEddy}"
@@ -442,7 +442,7 @@ main()
 			log_Msg "ABORTING"
 			exit 1
 		fi
-	fi
+#	fi
 	
 	log_Msg "eddy executable command to use: ${eddyExec}"
 	

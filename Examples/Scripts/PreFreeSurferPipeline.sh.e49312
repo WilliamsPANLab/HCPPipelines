@@ -1,2 +1,0 @@
-libc++abi.dylib: terminating with uncaught exception of type NEWIMAGE::FnirtFileReaderException: FnirtFileReader:: msg=FnirtFileReader: Displacement fields must contain 3 volumes
-/Applications/Preprocessing/Pipelines-master/PreFreeSurfer/scripts/T2wToT1wReg.sh: line 29: 63234 Abort trap: 6           ${FSLDIR}/bin/convertwarp --relout --rel -r "$OutputT2wImage".nii.gz -w $OutputT1wTransform --postmat="$WD"/T2w2T1w.mat --out="$OutputT2wTransform"

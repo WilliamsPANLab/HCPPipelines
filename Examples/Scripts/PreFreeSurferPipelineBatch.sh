@@ -7,7 +7,7 @@
 #
 # ## Copyright Notice
 #
-# Copyright (C) 2013-2016 The Human Connectome Project
+# Copyright (C) 2013-2018 The Human Connectome Project
 #
 # * Washington University in St. Louis
 # * University of Minnesota
@@ -15,7 +15,7 @@
 #
 # ## Author(s)
 #
-# * Matthey F. Glasser, Department of Anatomy and Neurobiology,
+# * Matthew F. Glasser, Department of Anatomy and Neurobiology,
 #   Washington University in St. Louis
 # * Timothy B. Brown, Neuroinformatics Research Group,
 #   Washington University in St. Louis
@@ -83,40 +83,40 @@
 #   These values are intended to be used to override any values set
 #   directly within this script file
 get_batch_options() {
-    local arguments=("$@")
+	local arguments=("$@")
 
-    unset command_line_specified_study_folder
-    unset command_line_specified_subj
-    unset command_line_specified_run_local
+	unset command_line_specified_study_folder
+	unset command_line_specified_subj
+	unset command_line_specified_run_local
 
-    local index=0
-    local numArgs=${#arguments[@]}
-    local argument
+	local index=0
+	local numArgs=${#arguments[@]}
+	local argument
 
-    while [ ${index} -lt ${numArgs} ]; do
-        argument=${arguments[index]}
+	while [ ${index} -lt ${numArgs} ]; do
+		argument=${arguments[index]}
 
-        case ${argument} in
-            --StudyFolder=*)
-                command_line_specified_study_folder=${argument#*=}
-                index=$(( index + 1 ))
-                ;;
-            --Subject=*)
-                command_line_specified_subj=${argument#*=}
-                index=$(( index + 1 ))
-                ;;
-            --runlocal)
-                command_line_specified_run_local="TRUE"
-                index=$(( index + 1 ))
-                ;;
-	    *)
-		echo ""
-		echo "ERROR: Unrecognized Option: ${argument}"
-		echo ""
-		exit 1
-		;;
-        esac
-    done
+		case ${argument} in
+			--StudyFolder=*)
+				command_line_specified_study_folder=${argument#*=}
+				index=$(( index + 1 ))
+				;;
+			--Subject=*)
+				command_line_specified_subj=${argument#*=}
+				index=$(( index + 1 ))
+				;;
+			--runlocal)
+				command_line_specified_run_local="TRUE"
+				index=$(( index + 1 ))
+				;;
+			*)
+				echo ""
+				echo "ERROR: Unrecognized Option: ${argument}"
+				echo ""
+				exit 1
+				;;
+		esac
+	done
 }
 
 # Function: main
@@ -126,11 +126,11 @@ main()
 	get_batch_options "$@"
 
 	# Set variable values that locate and specify data to process
-	StudyFolder="${HOME}/Desktop/HCP_Pilots" # Location of Subject folders (named by subjectID)
-	Subjlist="CONN009 CONN010 CONN011"                                    # Space delimited list of subject IDs
+	StudyFolder="${SCRATCH}/HCP_HCPformat" # Location of Subject folders (named by subjectID)
+	Subjlist="100307"                                    # Space delimited list of subject IDs
 
-	# Set variable value that set up environment
-  EnvironmentScript="/Applications/Preprocessing/Pipelines/Examples/Scripts/SetUpHCPPipeline_CUSTOM.sh" # Pipeline environment script
+	# Set variable value that sets up environment
+	EnvironmentScript="$PI_HOME/ltozzi/HCPPipeline_3.27.0_sherlock/Examples/Scripts/SetUpHCPPipeline.sh"  # Pipeline environment script
 
 	# Use any command line specified options to override any of the variable settings above
 	if [ -n "${command_line_specified_study_folder}" ]; then
@@ -154,11 +154,11 @@ main()
 	# if [ X$SGE_ROOT != X ] ; then
 	#    QUEUE="-q long.q"
 	#    QUEUE="-q veryshort.q"
-    QUEUE="-q hcp_priority.q"
+	QUEUE="-q hcp_priority.q"
 	# fi
 
 	# If PRINTCOM is not a null or empty string variable, then
-    # this script and other scripts that it calls will simply
+	# this script and other scripts that it calls will simply
 	# print out the primary commands it otherwise would run.
 	# This printing will be done using the command specified
 	# in the PRINTCOM variable
@@ -287,12 +287,14 @@ main()
 		# The MagnitudeInputName variable should be set to a 4D magitude volume
 		# with two 3D timepoints or "NONE" if not used
 		MagnitudeInputName="NONE"
+
 		# The PhaseInputName variable should be set to a 3D phase difference
 		# volume or "NONE" if not used
 		PhaseInputName="NONE"
+
 		# The TE variable should be set to 2.46ms for 3T scanner, 1.02ms for 7T
 		# scanner or "NONE" if not using
-		TE="2.46"
+		TE="NONE"
 
 		# ----------------------------------------------------------------------
 		# Variables related to using Spin Echo Field Maps
@@ -372,25 +374,25 @@ main()
 		# Templates
 
 		# Hires T1w MNI template
-		T1wTemplate="${HCPPIPEDIR_Templates}/MNI152_T1_0.8mm.nii.gz"
+		T1wTemplate="${HCPPIPEDIR_Templates}/MNI152_T1_0.7mm.nii.gz"
 
 		# Hires brain extracted MNI template
-		T1wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T1_0.8mm_brain.nii.gz"
+		T1wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T1_0.7mm_brain.nii.gz"
 
 		# Lowres T1w MNI template
 		T1wTemplate2mm="${HCPPIPEDIR_Templates}/MNI152_T1_2mm.nii.gz"
 
 		# Hires T2w MNI Template
-		T2wTemplate="${HCPPIPEDIR_Templates}/MNI152_T2_0.8mm.nii.gz"
+		T2wTemplate="${HCPPIPEDIR_Templates}/MNI152_T2_0.7mm.nii.gz"
 
 		# Hires T2w brain extracted MNI Template
-		T2wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T2_0.8mm_brain.nii.gz"
+		T2wTemplateBrain="${HCPPIPEDIR_Templates}/MNI152_T2_0.7mm_brain.nii.gz"
 
 		# Lowres T2w MNI Template
 		T2wTemplate2mm="${HCPPIPEDIR_Templates}/MNI152_T2_2mm.nii.gz"
 
 		# Hires MNI brain mask template
-		TemplateMask="${HCPPIPEDIR_Templates}/MNI152_T1_0.8mm_brain_mask.nii.gz"
+		TemplateMask="${HCPPIPEDIR_Templates}/MNI152_T1_0.7mm_brain_mask.nii.gz"
 
 		# Lowres MNI brain mask template
 		Template2mmMask="${HCPPIPEDIR_Templates}/MNI152_T1_2mm_brain_mask_dil.nii.gz"
@@ -404,18 +406,18 @@ main()
 		# set all these values to NONE if not doing readout distortion correction
 		#
 		# Sample values for when using General Electric structurals
-		   T1wSampleSpacing="0.000011999" # For General Electric scanners, 1/((0018,0095)*(0028,0010))
-		   T2wSampleSpacing="0.000008000" # For General Electric scanners, 1/((0018,0095)*(0028,0010))
+		#   T1wSampleSpacing="0.000011999" # For General Electric scanners, 1/((0018,0095)*(0028,0010))
+		#   T2wSampleSpacing="0.000008000" # For General Electric scanners, 1/((0018,0095)*(0028,0010))
 		#   UnwarpDir="y"  ## MPH: This doesn't seem right. Is this accurate??
 
 		# The values set below are for the HCP-YA Protocol using the Siemens
 		# Connectom Scanner
 
 		# DICOM field (0019,1018) in s or "NONE" if not used
-		T1wSampleSpacing="0.0000074"
+		T1wSampleSpacing="0.000016"
 
 		# DICOM field (0019,1018) in s or "NONE" if not used
-		T2wSampleSpacing="0.0000021"
+		T2wSampleSpacing="0.000015259"
 
 		# z appears to be the appropriate polarity for the 3D structurals collected on Siemens scanners
 		# or "NONE" if not used
