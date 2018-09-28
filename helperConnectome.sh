@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for subject_cap in CONN105 CONN106 CONN107 CONN109 CONN110 CONN111 CONN112 CONN113 CONN114 CONN115 CONN116 CONN117 CONN118 CONN119 CONN120 CONN121 CONN122 CONN123 CONN124 CONN125 CONN126 CONN127 CONN128 CONN129 CONN130 CONN131 CONN132 CONN133 CONN008 CONN009 CONN010 CONN011 CONN012 CONN013 CONN014 CONN015 CONN016 CONN017 CONN018 CONN019 CONN020 CONN021 CONN022 CONN023 CONN024 CONN025 CONN026 CONN027 CONN028 CONN029 CONN030 CONN031 CONN032 CONN033 CONN034 CONN035 CONN036 CONN037 CONN038 CONN039 CONN040 CONN041 CONN042 CONN043 CONN044 CONN045 CONN046
+for subject_cap in CONN136 CONN134 CONN133 CONN138
 
 do
   subject="$(echo ${subject_cap} | awk '{print tolower($0)}')"
@@ -12,8 +12,8 @@ do
   if [ -d /share/leanew1/migration-snigroups/HCP_Raw/000_data_archive/${subject}_p1 ]
   then
     cd /share/leanew1/migration-snigroups/HCP_Raw/000_data_archive/${subject}_p1
-    #rsync -rv $PWD/ /share/leanew1/PANLab_Datasets/CONNECTOME/raw/000_data_archive/${subject}
-    #Resting pe0 and SB Ref
+    rsync -rv $PWD/ /share/leanew1/PANLab_Datasets/CONNECTOME/raw/000_data_archive/${subject}
+    Resting pe0 and SB Ref
     if [ -d *rsFmri24_pe0_ssg ]
     then
         # Get fmri_prefix
@@ -163,7 +163,7 @@ do
   if [ -d /share/leanew1/migration-snigroups/HCP_Raw/000_data_archive/${subject}_p2 ]
   then
     cd /share/leanew1/migration-snigroups/HCP_Raw/000_data_archive/${subject}_p2
-    cp -R . /share/leanew1/PANLab_Datasets/CONNECTOME/raw/000_data_archive/${subject}
+    rsync -rav $PWD/ /share/leanew1/PANLab_Datasets/CONNECTOME/raw/000_data_archive/${subject}
     #Resting pe0 and SB Ref
     if [ -d *rsFmri24_pe0_ssg ]
     then
